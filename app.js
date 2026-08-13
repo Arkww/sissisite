@@ -273,7 +273,7 @@ function renderBlock(b, p) {
       for (let i = 0; i < b.items.length; i += cols) {
         const cells = b.items.slice(i, i + cols).map(it => `
           <div class="b-cell ucard" style="--ar:${ratioNum(it.r)}">
-            ${frame(d, it.src, it.r, it.t, it.fit)}
+            ${frame(d, it.src, it.r, it.t, it.fit, true)}
             <div class="ucard-meta">
               <div class="ucard-h">${it.sw ? `<span class="ucard-sw" style="background:${esc(it.sw)}"></span>` : ""}<span class="ucard-name">${esc(L(it.t))}</span></div>
               ${it.cn && lang === "zh" ? `<div class="ucard-cn">${esc(it.cn)}</div>` : ""}
