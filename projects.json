@@ -1,0 +1,816 @@
+[
+  {
+    "slug": "livre-popup",
+    "num": "01",
+    "title": "Livre Pop-up",
+    "cat": "Édition & papier · Création 3D",
+    "featured": true,
+    "lead": [
+      "J'ai rédigé un manuel technique dédié à la conception de livres pop-up, accompagné de la création de deux ouvrages en trois dimensions inspirés de la peinture asiatique.",
+      "Cette discipline, qui allie artisanat et narration visuelle, représente à la fois ma passion et mon domaine d'excellence."
+    ],
+    "blocks": [
+      {
+        "kind": "image",
+        "name": "hero",
+        "ratio": "21/7.5",
+        "label": "Scène pop-up — paysage de montagnes (panoramique)"
+      },
+      {
+        "kind": "section",
+        "title": "Idée & ébauche",
+        "text": "J'ai d'abord étudié diverses techniques de réalisation des livres pop-up, pour finalement opter pour deux mécanismes tridimensionnels distincts. J'ai choisi de mettre en scène de nombreux sites célèbres chinois ; chaque élément en relief a ensuite été réalisé à la main."
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "sketch-1",
+            "ratio": "4/3",
+            "label": "Planche de croquis — recherches de structures"
+          },
+          {
+            "name": "sketch-2",
+            "ratio": "4/3",
+            "label": "Croquis 3D — étude des mécanismes"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Résultat & reliure",
+        "text": "J'ai réalisé deux livres aux constructions en volume différentes, reliés selon un système de reliure papillon."
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "result-1",
+            "ratio": "4/3",
+            "label": "Les deux ouvrages reliés — « Zui Hua Yun »"
+          },
+          {
+            "name": "result-2",
+            "ratio": "4/3",
+            "label": "Détail de la reliure papillon"
+          }
+        ]
+      },
+      {
+        "kind": "cards",
+        "cols": 2,
+        "items": [
+          {
+            "name": "book-1",
+            "ratio": "4/3",
+            "title": "Premier livre — structure 180°",
+            "body": "Chaque scène a été conçue au fil de nombreux essais et dessins. Chaque page raconte une histoire, sublimée par le jeu de la lumière et de l'ombre."
+          },
+          {
+            "name": "book-2",
+            "ratio": "4/3",
+            "title": "Second livre — structure en niveaux",
+            "body": "Une structure en niveaux, avec au moins trois plans par page, exprime la profondeur du lointain au premier plan et enrichit l'expérience visuelle."
+          }
+        ]
+      },
+      {
+        "kind": "image",
+        "name": "detail",
+        "ratio": "16/9",
+        "label": "Tranche du livre — superposition des plans"
+      },
+      {
+        "kind": "duo",
+        "layout": "text-img",
+        "text": {
+          "title": "Manuel du livre animé",
+          "body": "Ce guide de fabrication, entièrement conçu, édité et relié par mes soins, s'organise en sept chapitres. J'y présente en détail les structures pop-up les plus courantes et leurs méthodes de fabrication ; chaque structure est suivie d'un exemple concret. Les dernières pages présentent quelques montages plus complexes."
+        },
+        "image": {
+          "name": "manual-cover",
+          "ratio": "3/4",
+          "label": "Couverture du manuel — « Laissez votre livre tenir debout »"
+        }
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "diagram-1",
+            "ratio": "1/1",
+            "label": "Planche de structures — schémas"
+          },
+          {
+            "name": "diagram-2",
+            "ratio": "1/1",
+            "label": "Exemple monté — grande roue en papier"
+          },
+          {
+            "name": "diagram-3",
+            "ratio": "1/1",
+            "label": "Variations d'angles — 90° / 180°"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "crus-vintages",
+    "num": "02",
+    "title": "Crus & Vintages",
+    "cat": "Identité & univers du vin",
+    "featured": true,
+    "lead": [
+      "Crus & Vintages est une maison spécialisée dans l'importation et l'exportation de vins. J'y étais en charge du design graphique et de la communication : web design, réseaux sociaux, étiquettes, affiches et packagings.",
+      "Au-delà du graphisme, ce poste comportait une dimension marketing — analyse régulière des produits les plus performants, mis en relation avec les temps forts du calendrier et les clients professionnels."
+    ],
+    "blocks": [
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "web-1",
+            "ratio": "1/2",
+            "label": "Maquette web — accueil & charte couleur"
+          },
+          {
+            "name": "web-2",
+            "ratio": "2/5",
+            "label": "Maquette web — fiche produit"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Château Tour de Sarrail",
+        "text": "Cette étiquette s'inspire du cycle de vie du vin — de la graine de raisin à la dégustation, en passant par la croissance, la récolte et la vinification. J'ai complété l'étiquette par une vidéo promotionnelle et une campagne sur les réseaux sociaux."
+      },
+      {
+        "kind": "duo",
+        "layout": "even",
+        "image": {
+          "name": "sarrail-label",
+          "ratio": "4/4",
+          "label": "Étiquette — Château Tour de Sarrail 2020"
+        },
+        "image2": {
+          "name": "sarrail-bottles",
+          "ratio": "3/4",
+          "label": "Mise en situation — bouteilles"
+        }
+      },
+      {
+        "kind": "grid",
+        "cols": 1,
+        "items": [
+          {
+            "name": "ig-1",
+            "ratio": "1.5/1",
+            "label": "Post Instagram 1"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Pièce de Dieu",
+        "text": "Une étiquette inspirée de Bacchus, dieu du vin."
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "dieu-1",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Étiquette claire — Pièce de Dieu"
+          },
+          {
+            "name": "dieu-2",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Étiquette noire — Pièce de Dieu"
+          },
+          {
+            "name": "dieu-3",
+            "ratio": "3/4",
+            "label": "Bouteilles — rouge & blanc"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Le secret de la vigne",
+        "text": "L'inspiration provient de l'aspect des coupes de tiges de vigne observées au microscope — à gauche les raisins noirs, à droite les raisins blancs."
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "secret-1",
+            "ratio": "3/4",
+            "label": "Étiquette claire — Le secret de la vigne"
+          },
+          {
+            "name": "secret-2",
+            "ratio": "3/4",
+            "label": "Étiquette sombre — Le secret de la vigne"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Série « Rêve de Picasso »",
+        "text": "Une gamme d'étiquettes aux illustrations cubistes, chaque cuvée portant son propre visage."
+      },
+      {
+        "kind": "grid",
+        "cols": 4,
+        "items": [
+          {
+            "name": "picasso-1",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Étiquette claire — Pièce de Dieu"
+          },
+          {
+            "name": "picasso-2",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Étiquette noire — Pièce de Dieu"
+          },
+          {
+            "name": "picasso-3",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Bouteilles — rouge & blanc"
+          },
+          {
+            "name": "picasso-4",
+            "fit": "contain",
+            "ratio": "3/4",
+            "label": "Bouteilles — rouge & blanc"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "« Rêve doré enivrant » — sacs d'emballage",
+        "text": "Cinq déclinaisons de sacs cadeaux, chacune portée par une matière marbrée et une intention propre."
+      },
+      {
+        "kind": "cards",
+        "cols": 5,
+        "items": [
+          {
+            "name": "bag-blanc",
+            "fit": "cover",
+            "ratio": "2/3",
+            "swatch": "#EDEDE9",
+            "title": "Blanc nacré",
+            "cn": "细浪珍珠白",
+            "body": "Frais et délicat, inspiré de l'océan et des perles ; un blanc pur et lumineux."
+          },
+          {
+            "name": "bag-jaune",
+            "fit": "cover",
+            "ratio": "2/3",
+            "swatch": "#E9C84A",
+            "title": "Jaune marguerite",
+            "cn": "花语雏菊黄",
+            "body": "Quotidien et lumineux, inspiré du forsythia ; espoir, pureté et paix."
+          },
+          {
+            "name": "bag-rouge",
+            "fit": "cover",
+            "ratio": "2/3",
+            "swatch": "#C5392B",
+            "title": "Rouge festif",
+            "cn": "节日喜庆红",
+            "body": "Pensé pour les fêtes ; des motifs d'encre éclaboussée, une célébration joyeuse."
+          },
+          {
+            "name": "bag-bordeaux",
+            "fit": "cover",
+            "ratio": "2/3",
+            "swatch": "#6E2230",
+            "title": "Rouge d'origine",
+            "cn": "精选产地红",
+            "body": "Inspiré des rouges de Bordeaux et de Bourgogne ; une atmosphère élégante."
+          },
+          {
+            "name": "bag-noir",
+            "fit": "cover",
+            "ratio": "2/3",
+            "swatch": "#1C1A1A",
+            "title": "Noir élégant",
+            "cn": "深沉高级黑",
+            "body": "Noir mat rehaussé de lignes dorées ; une allure sobre, profonde et précieuse."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "moonzzz",
+    "num": "03",
+    "title": "MOONZZZ",
+    "cat": "Application IA · Bien-être mental",
+    "featured": true,
+    "lead": [
+      "MOONZZZ est une application de bien-être mental destinée aux 18–30 ans. Une IA empathique y détecte les émotions et propose un accompagnement personnalisé.",
+      "Ses contenus immersifs aident à apaiser le stress et apportent réconfort et sérénité."
+    ],
+    "blocks": [
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "device-1",
+            "ratio": "4/2.3",
+            "label": "Écran d'accueil — mobile (mockup)"
+          },
+          {
+            "name": "device-2",
+            "ratio": "4/2.3",
+            "label": "Montre connectée — « Stress immédiat »"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Lire le niveau de pression",
+        "text": "Deux cercles traduisent l'état intérieur (émotions profondes, stress, sérénité) et l'état extérieur (comportements, rythme de vie). Superposés, ils traduisent le calme — pression = 0 ; plus ils s'éloignent, plus le stress grandit. Cinq paliers structurent cette échelle."
+      },
+      {
+        "kind": "image",
+        "name": "pressure",
+        "ratio": "2/1",
+        "label": "Schéma — les cinq niveaux de pression"
+      },
+      {
+        "kind": "duo",
+        "layout": "text-img",
+        "text": {
+          "title": "Direction typographique — Urbanist",
+          "body": "Une linéale géométrique moderne, lisible et épurée ; sa structure et sa variété de graisses permettent une hiérarchie claire, idéale pour les interfaces numériques. « Vos émotions ont le droit à un redémarrage tendre. »"
+        },
+        "image": {
+          "name": "palette",
+          "ratio": "4/5",
+          "label": "Palette chromatique & ambiance"
+        }
+      },
+      {
+        "kind": "section",
+        "title": "Interface (extrait)"
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "ui-1",
+            "ratio": "9/19",
+            "label": "Écran d'ouverture — MOONZZZ"
+          },
+          {
+            "name": "ui-2",
+            "ratio": "9/19",
+            "label": "« Équilibre fragile » — écoute vocale"
+          },
+          {
+            "name": "ui-3",
+            "ratio": "9/19",
+            "label": "Connexion par e-mail"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Promotion sur les réseaux sociaux",
+        "text": "Une série de publications dans une ambiance cohérente avec le style de l'application."
+      },
+      {
+        "kind": "duo",
+        "layout": "even",
+        "image": {
+          "name": "poster",
+          "ratio": "3/4",
+          "label": "Affiche urbaine — façade"
+        },
+        "image2": {
+          "name": "posts",
+          "ratio": "3/4",
+          "label": "Posts Instagram — lancement"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "the-kaigu",
+    "num": "04",
+    "title": "Thé Fleurs-Fruits Kaigu",
+    "cat": "Packaging · Gamme de thés",
+    "featured": true,
+    "lead": [
+      "Kaigu (开古) est une marque chinoise de thé proposant de nombreuses variétés aux bienfaits et aux assemblages différents.",
+      "Pour chaque thé, j'ai dessiné un motif géométrique tiré de ses ingrédients, afin de rendre chaque saveur immédiatement identifiable."
+    ],
+    "blocks": [
+      {
+        "kind": "image",
+        "name": "hero",
+        "ratio": "2/1",
+        "label": "Étuis — motifs géométriques (ambiance)"
+      },
+      {
+        "kind": "cards",
+        "cols": 4,
+        "items": [
+          {
+            "name": "tea-1",
+            "ratio": "3/4",
+            "title": "Thé aux huit trésors fruité",
+            "body": "À base d'ananas et de fleurs : une infusion parfumée, douce et persistante."
+          },
+          {
+            "name": "tea-2",
+            "ratio": "3/4",
+            "title": "Tisane beauté purifiante",
+            "body": "Riche en essences florales : parfumée et agréable, une sensation de fraîcheur naturelle."
+          },
+          {
+            "name": "tea-3",
+            "ratio": "3/4",
+            "title": "Tisane minceur équilibrante",
+            "body": "Aux essences florales : une saveur délicate et raffinée, pleine de vitalité."
+          },
+          {
+            "name": "tea-4",
+            "ratio": "3/4",
+            "title": "Tisane de margose apaisante",
+            "body": "Ingrédients singuliers, recette raffinée : un goût naturel et doux, en toute saison."
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Design d'emballage",
+        "text": "Du coffret au sac cadeau, en passant par le patron de découpe."
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "pack-1",
+            "ratio": "4/3",
+            "label": "Coffrets empilés"
+          },
+          {
+            "name": "pack-2",
+            "ratio": "4/3",
+            "label": "Sacs cadeaux — recto / verso"
+          },
+          {
+            "name": "pack-3",
+            "ratio": "4/3",
+            "fit": "contain",
+            "label": "Patron de la boîte (à plat)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "vi-hotel",
+    "num": "05",
+    "title": "Four Seasons Whale Whisper",
+    "cat": "Identité visuelle hôtelière",
+    "featured": true,
+    "lead": [
+      "L'hôtel « Quatre Saisons & Baleine » (四时鲸语) est un complexe de villégiature en bord de mer à Dalian, en Chine.",
+      "J'ai conçu son logo, son système de signalétique et un manuel d'identité visuelle complet."
+    ],
+    "blocks": [
+      {
+        "kind": "image",
+        "name": "hero",
+        "ratio": "2/1",
+        "label": "Ambiance — bord de mer & logo 四时鲸语"
+      },
+      {
+        "kind": "duo",
+        "layout": "text-img",
+        "text": {
+          "title": "Une identité complète",
+          "body": "Après avoir défini avec le client le style recherché, j'ai décliné l'identité sur l'ensemble des supports : cartes de visite, uniformes, affiches… Le tout réuni dans un manuel d'identité visuelle."
+        },
+        "image": {
+          "name": "logo",
+          "ratio": "4/3",
+          "fit": "contain",
+          "label": "Logo — 四时鲸语"
+        }
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "vi-1",
+            "ratio": "4/3",
+            "label": "Manuel VI — couvertures"
+          },
+          {
+            "name": "vi-2",
+            "ratio": "4/3",
+            "label": "Manuel VI — page cartes de visite"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Système de signalétique",
+        "text": "Une signalétique complète, pensée pour fluidifier le parcours et améliorer l'expérience des clients."
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "sign-1",
+            "ratio": "4/3",
+            "label": "Panneau d'orientation — extérieur"
+          },
+          {
+            "name": "sign-2",
+            "ratio": "4/3",
+            "label": "Plan mural — intérieur"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "zhuo-gu-yu-jin",
+    "num": "06",
+    "title": "Zhuo Gu Yu Jin",
+    "cat": "Thé chinois · Logo & packaging",
+    "lead": [
+      "Zhuo Gu Yu Jin (酌古御今茶业) est un domaine de thé ancien du Yunnan, en Chine.",
+      "J'ai conçu pour la marque son logo — aujourd'hui déposé et utilisé — ainsi qu'une partie de ses emballages."
+    ],
+    "blocks": [
+      {
+        "kind": "image",
+        "name": "logo",
+        "ratio": "2/1",
+        "fit": "contain",
+        "label": "Logo de la marque — 酌古御今茶业"
+      },
+      {
+        "kind": "section",
+        "title": "Série d'emballages",
+        "text": "Je participe à la conception des emballages saisonniers, du produit initial aux différentes gammes — chaque thé ayant sa propre saveur."
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "pack-1",
+            "ratio": "4/3",
+            "label": "Galette « Shui Die » — mise en situation"
+          },
+          {
+            "name": "pack-2",
+            "ratio": "4/3",
+            "label": "Coffret bois — produit fini"
+          }
+        ]
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "pack-3",
+            "ratio": "2/1",
+            "label": "Emballage — « Xiao Hu Sai » (série Lincang)"
+          },
+          {
+            "name": "pack-4",
+            "ratio": "2/1",
+            "label": "Emballage — « Bai Hua Chun Yun »"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Esquisses — saison à venir",
+        "text": "Une sélection de pistes graphiques pour la prochaine collection."
+      },
+      {
+        "kind": "image",
+        "name": "sketches",
+        "ratio": "16/9",
+        "label": "Planche d'esquisses — neuf déclinaisons"
+      }
+    ]
+  },
+  {
+    "slug": "bobochacha",
+    "num": "07",
+    "title": "BOBOCHACHA",
+    "cat": "Logo & communication · Restaurant",
+    "featured": true,
+    "lead": [
+      "Logo et communication du restaurant BOBOCHACHA — une adresse Taïwan × Japon récemment ouverte à Bordeaux, qui vise une clientèle jeune."
+    ],
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Le logo",
+        "text": "Décliné en trois versions, pour s'adapter à tous les fonds."
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "logo-1",
+            "ratio": "1/1",
+            "label": "Logo — fond noir"
+          },
+          {
+            "name": "logo-2",
+            "ratio": "1/1",
+            "fit": "contain",
+            "label": "Logo — fond blanc"
+          },
+          {
+            "name": "logo-3",
+            "ratio": "1/1",
+            "label": "Logo — fond sarcelle"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Flyers & affiches",
+        "text": "Des supports aux couleurs vives et dynamiques, à l'image du lieu."
+      },
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "print-1",
+            "ratio": "4/3",
+            "label": "Flyer — menu (recto / verso)"
+          },
+          {
+            "name": "print-2",
+            "ratio": "4/3",
+            "label": "Flyer promo — Taï Taï Combo"
+          },
+          {
+            "name": "print-3",
+            "ratio": "3/4",
+            "label": "Affiche — bols & bubble tea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cochon-rose",
+    "num": "08",
+    "title": "Cochon Rose",
+    "cat": "Pack d'emojis · WeChat",
+    "lead": [
+      "Un pack d'emojis « cochon rose » créé d'après le quotidien de ma meilleure amie.",
+      "La série est déjà publiée sur WeChat."
+    ],
+    "blocks": [
+      {
+        "kind": "duo",
+        "layout": "even",
+        "image": {
+          "name": "anim",
+          "ratio": "4/3",
+          "label": "Vignette animée — cochon rose"
+        },
+        "image2": {
+          "name": "icons",
+          "ratio": "4/3",
+          "label": "Déclinaisons — silhouettes noir & blanc"
+        }
+      },
+      {
+        "kind": "image",
+        "name": "grid",
+        "ratio": "16/9",
+        "label": "Planche complète — 25 expressions"
+      }
+    ]
+  },
+  {
+    "slug": "eclat-ete",
+    "num": "09",
+    "title": "Éclat d'été",
+    "cat": "Patrimoine immatériel · Design produit",
+    "lead": [
+      "« Éclat d'été » — une série de créations culturelles inspirées du patrimoine immatériel chinois, réalisée lors de ma participation à une émission de télévision chinoise.",
+      "Toutes les pièces ont été produites et commercialisées."
+    ],
+    "blocks": [
+      {
+        "kind": "image",
+        "name": "patterns",
+        "ratio": "2/1",
+        "label": "Motifs textiles — planche de la série"
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "show-1",
+            "ratio": "16/9",
+            "label": "Émission — présentation produit"
+          },
+          {
+            "name": "show-2",
+            "ratio": "16/9",
+            "label": "Émission — sur le plateau"
+          }
+        ]
+      },
+      {
+        "kind": "image",
+        "name": "products",
+        "ratio": "16/9",
+        "label": "Produits finis — sacs, miroirs, accessoires"
+      }
+    ]
+  },
+  {
+    "slug": "photographie",
+    "num": "10",
+    "title": "Photographie",
+    "cat": "Photographie de produit",
+    "lead": [
+      "Je considère la photographie de produit comme une part essentielle du design.",
+      "Je réalise régulièrement des prises de vue pour mettre en valeur restaurants et produits."
+    ],
+    "blocks": [
+      {
+        "kind": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "name": "shot-1",
+            "ratio": "3/4",
+            "label": "Boisson — au soleil"
+          },
+          {
+            "name": "shot-2",
+            "ratio": "3/4",
+            "label": "Bulles & framboise — macro"
+          },
+          {
+            "name": "shot-3",
+            "ratio": "3/4",
+            "label": "Cocktails — trinquons"
+          }
+        ]
+      },
+      {
+        "kind": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "name": "shot-4",
+            "ratio": "4/3",
+            "label": "Ambiance bar — détail"
+          },
+          {
+            "name": "shot-5",
+            "ratio": "4/3",
+            "label": "Mise en scène — produit phare"
+          }
+        ]
+      }
+    ]
+  }
+]
