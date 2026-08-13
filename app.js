@@ -25,6 +25,17 @@ function esc(s) {
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+/* Escape text, then turn any http(s) URL into a clickable link (opens in a new
+   tab). Use this for free text (leads, block bodies) instead of esc(). */
+function linkify(s) {
+  return esc(s).replace(/(https?:\/\/[^\s<]+)/g, (m) => {
+    let url = m, tail = "";
+    const t = url.match(/(?:&amp;|[)\].,;:!?'"»])+$/); // don't swallow trailing punctuation
+    if (t) { tail = t[0]; url = url.slice(0, -tail.length); }
+    return `<a href="${url}" target="_blank" rel="noopener">${url}</a>${tail}`;
+  });
+}
+
 /* Find an image by NAME regardless of extension. We build two lists of URLs
    to try for one image:
    - native: extensions the browser can paint directly (jpg/png/webp/gif…),
@@ -235,7 +246,7 @@ function renderBlock(b, p) {
   const d = p.dir;
   switch (b.k) {
     case "text":
-      return `<div class="b-text reveal">${sectionTitle(b.t)}${b.b ? `<p>${esc(L(b.b))}</p>` : ""}</div>`;
+      return `<div class="b-text reveal">${sectionTitle(b.t)}${b.b ? `<p>${linkify(L(b.b))}</p>` : ""}</div>`;
     case "img": {
       // single image as a one-item row; `max` (px) caps its width (e.g. a logo)
       const mx = b.max ? `;max-width:${b.max}px` : "";
@@ -266,7 +277,7 @@ function renderBlock(b, p) {
             <div class="ucard-meta">
               <div class="ucard-h">${it.sw ? `<span class="ucard-sw" style="background:${esc(it.sw)}"></span>` : ""}<span class="ucard-name">${esc(L(it.t))}</span></div>
               ${it.cn && lang === "zh" ? `<div class="ucard-cn">${esc(it.cn)}</div>` : ""}
-              <p class="ucard-body">${esc(L(it.b))}</p>
+              <p class="ucard-body">${linkify(L(it.b))}</p>
             </div>
           </div>`).join("");
         rows += `<div class="b-grid-row">${cells}</div>`;
@@ -274,7 +285,7 @@ function renderBlock(b, p) {
       return `<div class="b-cards reveal">${rows}</div>`;
     }
     case "duo": {
-      const txt = `<div class="txt">${sectionTitle(b.t)}<p>${esc(L(b.b))}</p></div>`;
+      const txt = `<div class="txt">${sectionTitle(b.t)}<p>${linkify(L(b.b))}</p></div>`;
       const im = `<div>${frame(d, b.img.src, b.img.r, b.img.cap, b.img.fit)}</div>`;
       const inner = b.layout === "text-img" ? txt + im : im + txt;
       return `<div class="b-duo reveal">${inner}</div>`;
@@ -399,7 +410,7 @@ function projectHTML(slug) {
       ${cnSub && cnSub !== pTitle ? `<div class="cn">${esc(cnSub)}</div>` : ""}
     </header>`;
 
-  const lead = `<div class="plead">${p.lead.map(t => `<p>${esc(L(t))}</p>`).join("")}</div>`;
+  const lead = `<div class="plead">${p.lead.map(t => `<p>${linkify(L(t))}</p>`).join("")}</div>`;
   const body = `<div class="pbody">${p.blocks.map(b => renderBlock(b, p)).join("")}</div>`;
 
   const prevLink = prev
