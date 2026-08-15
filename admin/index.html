@@ -270,7 +270,7 @@ function cardItemEditor(item, ctx){
     ])
   ]);
 }
-function blockEditor(block, dir, onDel){
+function blockEditor(block, dir, ctx){
   const body = h("div", {});
   function fill(){
     body.innerHTML = "";
@@ -304,7 +304,11 @@ function blockEditor(block, dir, onDel){
   return h("div", { class:"block" }, [
     h("div", { class:"row", style:"justify-content:space-between;margin-bottom:6px" }, [
       h("span", { class:"pill" }, [block.k]),
-      h("button", { class:"small ghost", onclick:onDel }, ["删除该区块"])
+      h("div", { class:"row" }, [
+        h("button",{class:"small ghost",title:"上移",onclick:ctx.onUp},["↑"]),
+        h("button",{class:"small ghost",title:"下移",onclick:ctx.onDown},["↓"]),
+        h("button",{class:"small ghost",onclick:ctx.onDel},["删除该区块"])
+      ])
     ]),
     body
   ]);
@@ -318,7 +322,11 @@ function projectEditor(p, index){
   function fillBlocks(){
     blocksWrap.innerHTML = "";
     p.blocks = p.blocks || [];
-    p.blocks.forEach((b, bi) => blocksWrap.append(blockEditor(b, p.dir, () => { p.blocks.splice(bi,1); fillBlocks(); })));
+    p.blocks.forEach((b, bi) => blocksWrap.append(blockEditor(b, p.dir, {
+      onDel:()=>{ p.blocks.splice(bi,1); fillBlocks(); },
+      onUp:()=>{ if(bi>0){ const [x]=p.blocks.splice(bi,1); p.blocks.splice(bi-1,0,x); fillBlocks(); } },
+      onDown:()=>{ if(bi<p.blocks.length-1){ const [x]=p.blocks.splice(bi,1); p.blocks.splice(bi+1,0,x); fillBlocks(); } }
+    })));
   }
   fillBlocks();
   const leadWrap = h("div", {});
