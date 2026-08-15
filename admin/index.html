@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>后台管理 — 杨晨曦</title>
+<style>
+  :root{--paper:#FBF6EC;--ink:#1A1712;--accent:#B54664;--b:rgba(26,23,18,.16);--soft:rgba(26,23,18,.55);
+        --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans SC",sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}
+  a{color:var(--accent)}
+  .wrap{max-width:920px;margin:0 auto;padding:24px 18px 120px}
+  h1{font-size:22px;margin:0 0 4px} h2{font-size:16px;margin:26px 0 10px;border-bottom:1.5px solid var(--b);padding-bottom:6px}
+  h3{font-size:14px;margin:0}
+  .muted{color:var(--soft);font-size:13px}
+  label{display:block;font-size:11px;letter-spacing:.04em;color:var(--soft);margin:8px 0 3px}
+  input,textarea,select{width:100%;font:inherit;font-size:14px;padding:8px 10px;border:1.5px solid var(--b);border-radius:8px;background:#fff;color:var(--ink)}
+  input[type=checkbox]{width:auto}
+  textarea{min-height:64px;resize:vertical}
+  button{font:inherit;font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  button.small{padding:4px 10px;font-size:12px}
+  button.ghost{border-color:var(--b);color:var(--soft)}
+  button:disabled{opacity:.5;cursor:default}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+  .tri .t{position:relative}
+  .tri .t span{position:absolute;top:-14px;left:2px;font-size:9px;color:var(--soft)}
+  .card{border:1.5px solid var(--b);border-radius:12px;padding:14px;margin:12px 0;background:#fff}
+  .block{border:1px solid var(--b);border-radius:10px;padding:12px;margin:10px 0;background:var(--paper)}
+  .imgfield{display:flex;gap:6px;align-items:center}
+  .imgfield input{flex:1}
+  .pill{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--accent);color:#fff}
+  .hide{display:none}
+  #bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1.5px solid var(--b);
+       padding:12px 18px;display:flex;gap:12px;align-items:center;justify-content:flex-end;z-index:10}
+  #status{margin-right:auto;font-size:13px;color:var(--soft)}
+  .items{margin-left:10px;border-left:2px solid var(--b);padding-left:12px}
+  details>summary{cursor:pointer;font-weight:600;padding:4px 0}
+  code{font-family:var(--mono);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<div id="bar" class="hide">
+  <span id="status"></span>
+  <button class="ghost small" id="reloadBtn">重新加载</button>
+  <button class="primary" id="saveBtn">保存并发布</button>
+</div>
+
+<script>
+/* ============================================================
+   后台：通过 GitHub API（浏览器端）编辑 projects.json 与 简历 CV。
+   GitHub 令牌只保存在浏览器（localStorage），绝不写入代码。
+   ============================================================ */
+const OWNER = "Arkww", REPO = "sissisite", BRANCH = "main";
+const API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/";
+let TOKEN = localStorage.getItem("gh-token") || "";
+let STATE = [];        // 项目数组
+let projectsSha = null;
+
+const app = document.getElementById("app");
+const bar = document.getElementById("bar");
+const statusEl = document.getElementById("status");
+
+/* ---------- 工具函数 ---------- */
+function h(tag, attrs, kids){
+  const e = document.createElement(tag);
+  attrs = attrs || {};
+  for(const k in attrs){
+    if(k === "class") e.className = attrs[k];
+    else if(k === "html") e.innerHTML = attrs[k];
+    else if(k.slice(0,2) === "on") e.addEventListener(k.slice(2), attrs[k]);
+    else if(attrs[k] != null) e.setAttribute(k, attrs[k]);
+  }
+  (kids || []).forEach(c => {
+    if(c == null || c === false || c === true) return;          // 跳过空值/布尔值
+    e.appendChild(c instanceof Node ? c : document.createTextNode(String(c)));
+  });
+  return e;
+}
+function setStatus(msg, err){ statusEl.textContent = msg || ""; statusEl.style.color = err ? "#c0392b" : "var(--soft)"; }
+function encPath(p){ return p.split("/").map(encodeURIComponent).join("/"); }
+function hdr(){ return { Authorization: "Bearer " + TOKEN, Accept: "application/vnd.github+json", "Content-Type": "application/json" }; }
+function utf8ToB64(s){ return btoa(Array.from(new TextEncoder().encode(s)).map(b => String.fromCharCode(b)).join("")); }
+function b64ToUtf8(b){ return new TextDecoder().decode(Uint8Array.from(atob(b.replace(/\n/g,"")), c => c.charCodeAt(0))); }
+function fileToB64(file){ return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result.split(",")[1]); r.onerror = rej; r.readAsDataURL(file); }); }
+
+async function ghGet(path){
+  const r = await fetch(API + encPath(path) + "?ref=" + BRANCH, { headers: hdr(), cache: "no-store" });
+  if(r.status === 404) return { missing: true };
+  if(!r.ok) throw new Error("GET " + path + " → " + r.status);
+  return r.json();
+}
+async function ghPut(path, contentB64, sha, message){
+  const body = { message: message || ("admin: update " + path), content: contentB64, branch: BRANCH };
+  if(sha) body.sha = sha;
+  const r = await fetch(API + encPath(path), { method: "PUT", headers: hdr(), body: JSON.stringify(body) });
+  if(r.status === 403 || r.status === 404)
+    throw new Error("令牌没有写入权限。请在 GitHub 上编辑该令牌 → Repository permissions → 「Contents」→ Read and write，并确认已选择「sissisite」仓库。");
+  if(!r.ok) throw new Error("PUT " + path + " → " + r.status + " " + (await r.text()));
+  return r.json();
+}
+async function uploadBinary(path, file, message){
+  const b64 = await fileToB64(file);
+  const ex = await ghGet(path);
+  return ghPut(path, b64, ex.missing ? null : ex.sha, message);
+}
+
+/* ---------- 登录（令牌） ---------- */
+function renderGate(){
+  bar.classList.add("hide");
+  app.innerHTML = "";
+  app.append(
+    h("h1", {}, ["后台管理 — 杨晨曦"]),
+    h("p", { class:"muted" }, ["请粘贴一个 GitHub 精细化访问令牌（fine-grained，仅限本仓库，Contents 权限：Read and write）。令牌只保存在本浏览器中，绝不会写入代码。"]),
+    h("label", {}, ["GitHub 令牌"]),
+    (function(){ const i = h("input", { type:"password", id:"tok", placeholder:"github_pat_..." }); i.value = TOKEN; return i; })(),
+    h("div", { class:"row", style:"margin-top:12px" }, [
+      h("button", { class:"primary", onclick: async () => {
+        TOKEN = document.getElementById("tok").value.trim();
+        if(!TOKEN){ setStatus("令牌为空", true); return; }
+        localStorage.setItem("gh-token", TOKEN);
+        try { setStatus("连接中…"); await loadAll(); }
+        catch(e){ alert("失败：" + e.message + "\n请检查令牌及其权限。"); }
+      } }, ["登录"]),
+      h("a", { href:"https://github.com/settings/personal-access-tokens/new", target:"_blank", class:"muted" }, ["创建令牌 →"])
+    ])
+  );
+}
+
+/* 询问 GitHub：该令牌是否对本仓库有写入权限。 */
+async function verifyToken(){
+  const r = await fetch("https://api.github.com/repos/" + OWNER + "/" + REPO, { headers: hdr(), cache: "no-store" });
+  if(r.status === 401) throw new Error("令牌无效或已过期。");
+  if(!r.ok) throw new Error("访问被拒绝（" + r.status + "）。");
+  const j = await r.json();
+  if(!(j.permissions && j.permissions.push))
+    throw new Error("该令牌没有写入权限（需要在 sissisite 仓库上开启「Contents: Read and write」）。");
+}
+async function loadAll(){
+  await verifyToken();
+  const f = await ghGet("projects.json");
+  if(f.missing) throw new Error("仓库中找不到 projects.json。");
+  projectsSha = f.sha;
+  STATE = JSON.parse(b64ToUtf8(f.content));
+  renderApp();
+}
+
+/* ============================================================
+   字段控件
+   ============================================================ */
+function textInput(owner, key, opts){
+  opts = opts || {};
+  const i = h("input", { type: opts.type || "text", placeholder: opts.ph || "" });
+  i.value = owner[key] != null ? owner[key] : "";
+  i.addEventListener("input", () => {
+    let v = i.value;
+    if(opts.type === "number") v = v === "" ? undefined : Number(v);
+    owner[key] = v;
+  });
+  if(opts.width) i.style.maxWidth = opts.width;
+  return i;
+}
+function checkbox(owner, key, lbl){
+  const i = h("input", { type:"checkbox" });
+  i.checked = !!owner[key];
+  i.addEventListener("change", () => { owner[key] = i.checked || undefined; });
+  return h("label", { style:"letter-spacing:0;display:flex;gap:6px;align-items:center" }, [i, lbl]);
+}
+/* 三语 [中文, 法语, 英语] 编辑器。确保 owner[key] 是数组。 */
+function triField(owner, key, label, multiline){
+  if(!Array.isArray(owner[key])) owner[key] = [owner[key]||"", owner[key]||"", owner[key]||""];
+  const arr = owner[key];
+  const tag = multiline ? "textarea" : "input";
+  const mk = (idx) => {
+    const el = h(tag, { placeholder: ["中文","Français","English"][idx] });
+    el.value = arr[idx] || "";
+    el.addEventListener("input", () => { arr[idx] = el.value; });
+    return h("div", { class:"t" }, [h("span", {}, [["中文","法语","英语"][idx]]), el]);
+  };
+  return h("div", {}, [ label ? h("label", {}, [label]) : "",
+    h("div", { class:"tri" }, [mk(0), mk(1), mk(2)]) ]);
+}
+/* 图片/文件字段：文件名输入 + 上传按钮（提交到 images/<dir>/） */
+function imageField(owner, key, dir, label){
+  const nameI = h("input", { placeholder:"文件名.jpg" });
+  nameI.value = owner[key] || "";
+  nameI.addEventListener("input", () => { owner[key] = nameI.value; });
+  const file = h("input", { type:"file", class:"hide" });
+  const btn = h("button", { class:"small ghost", type:"button" }, ["⬆ 上传"]);
+  btn.onclick = () => file.click();
+  file.onchange = async () => {
+    const f = file.files[0]; if(!f) return;
+    const name = (nameI.value.trim() || f.name);
+    try {
+      setStatus("上传 " + name + "…");
+      await uploadBinary("images/" + dir + "/" + name, f, "admin: upload " + dir + "/" + name);
+      owner[key] = name; nameI.value = name;
+      setStatus("已上传：" + name + " ✓");
+    } catch(e){ setStatus("上传出错：" + e.message, true); alert(e.message); }
+  };
+  return h("div", {}, [ label ? h("label", {}, [label]) : "",
+    h("div", { class:"imgfield" }, [nameI, btn, file]) ]);
+}
+
+/* ============================================================
+   区块编辑器
+   ============================================================ */
+const BLOCK_TYPES = ["text","img","grid","cards","duo","video","pdf"];
+function newBlock(k){
+  if(k==="text") return { k:"text", t:["","",""], b:["","",""] };
+  if(k==="img") return { k:"img", src:"", r:"4/3", cap:["","",""] };
+  if(k==="grid") return { k:"grid", cols:2, items:[] };
+  if(k==="cards") return { k:"cards", cols:2, items:[] };
+  if(k==="duo") return { k:"duo", layout:"img-text", t:["","",""], b:["","",""], img:{ src:"", r:"4/3", cap:["","",""] } };
+  if(k==="video") return { k:"video", src:"", r:"16/9", cap:["","",""] };
+  if(k==="pdf") return { k:"pdf", src:"", cap:["","",""] };
+}
+function ratioFit(owner){
+  return h("div", { class:"row" }, [
+    h("div", { style:"width:110px" }, [h("label", {}, ["宽高比"]), textInput(owner,"r",{ph:"4/3"})]),
+    h("div", { style:"width:150px" }, [h("label", {}, ["填充方式"]), (function(){
+      const s = h("select", {}, [h("option",{value:""},["cover 裁剪（默认）"]), h("option",{value:"contain"},["contain 完整"])]);
+      s.value = owner.fit || ""; s.addEventListener("change",()=>{ owner.fit = s.value || undefined; }); return s;
+    })()]),
+    h("div", { style:"width:110px" }, [h("label", {}, ["最大宽度 px"]), textInput(owner,"max",{type:"number",ph:"—"})])
+  ]);
+}
+function gridItemEditor(item, dir, onDel){
+  return h("div", { class:"block" }, [
+    h("div", { class:"row", style:"justify-content:space-between" }, [ h("strong",{},["图片"]), h("button",{class:"small ghost",onclick:onDel},["删除"]) ]),
+    imageField(item, "src", dir, "文件"),
+    ratioFit(item),
+    triField(item, "cap", "图注")
+  ]);
+}
+function cardItemEditor(item, dir, onDel){
+  return h("div", { class:"block" }, [
+    h("div", { class:"row", style:"justify-content:space-between" }, [ h("strong",{},["卡片"]), h("button",{class:"small ghost",onclick:onDel},["删除"]) ]),
+    imageField(item, "src", dir, "图片"),
+    ratioFit(item),
+    triField(item, "t", "标题"),
+    triField(item, "b", "文字", true),
+    h("div", { class:"row" }, [
+      h("div",{style:"width:150px"},[h("label",{},["色块颜色"]), textInput(item,"sw",{ph:"#E9C84A"})]),
+      h("div",{style:"flex:1"},[h("label",{},["中文副标题（可选）"]), textInput(item,"cn",{ph:"细浪珍珠白"})])
+    ])
+  ]);
+}
+function blockEditor(block, dir, onDel){
+  const body = h("div", {});
+  function fill(){
+    body.innerHTML = "";
+    if(block.k==="text"){ body.append(triField(block,"t","分节标题"), triField(block,"b","段落",true)); }
+    else if(block.k==="img"){ body.append(imageField(block,"src",dir,"图片"), ratioFit(block), triField(block,"cap","图注")); }
+    else if(block.k==="video"){ body.append(imageField(block,"src",dir,"视频（.mp4）"), h("div",{style:"width:110px"},[h("label",{},["宽高比"]),textInput(block,"r",{ph:"16/9"})]), triField(block,"cap","图注")); }
+    else if(block.k==="pdf"){ body.append(imageField(block,"src",dir,"PDF"), triField(block,"cap","图注")); }
+    else if(block.k==="duo"){
+      const sel = h("select",{},[h("option",{value:"img-text"},["图片 + 文字"]),h("option",{value:"text-img"},["文字 + 图片"])]);
+      sel.value=block.layout||"img-text"; sel.addEventListener("change",()=>{block.layout=sel.value;});
+      block.img = block.img || {src:"",r:"4/3",cap:["","",""]};
+      body.append(h("label",{},["布局"]),sel, triField(block,"t","标题"), triField(block,"b","文字",true),
+        h("label",{},["图片"]), imageField(block.img,"src",dir), ratioFit(block.img), triField(block.img,"cap","图片图注"));
+    }
+    else if(block.k==="grid" || block.k==="cards"){
+      block.items = block.items || [];
+      body.append(h("div",{style:"width:110px"},[h("label",{},["列数"]),textInput(block,"cols",{type:"number"})]));
+      const list = h("div",{class:"items"});
+      block.items.forEach((it,ix)=>{
+        const ed = (block.k==="grid"?gridItemEditor:cardItemEditor)(it, dir, ()=>{ block.items.splice(ix,1); fill(); });
+        list.append(ed);
+      });
+      body.append(list, h("button",{class:"small",onclick:()=>{ block.items.push(block.k==="grid"?{src:"",r:"4/3",cap:["","",""]}:{src:"",r:"2/3",t:["","",""],b:["","",""]}); fill(); }},["+ 添加图片"]));
+    }
+  }
+  fill();
+  return h("div", { class:"block" }, [
+    h("div", { class:"row", style:"justify-content:space-between;margin-bottom:6px" }, [
+      h("span", { class:"pill" }, [block.k]),
+      h("button", { class:"small ghost", onclick:onDel }, ["删除该区块"])
+    ]),
+    body
+  ]);
+}
+
+/* ============================================================
+   项目编辑器
+   ============================================================ */
+function projectEditor(p, index){
+  const blocksWrap = h("div", {});
+  function fillBlocks(){
+    blocksWrap.innerHTML = "";
+    p.blocks = p.blocks || [];
+    p.blocks.forEach((b, bi) => blocksWrap.append(blockEditor(b, p.dir, () => { p.blocks.splice(bi,1); fillBlocks(); })));
+  }
+  fillBlocks();
+  const leadWrap = h("div", {});
+  function fillLead(){
+    leadWrap.innerHTML = "";
+    p.lead = p.lead || [];
+    p.lead.forEach((para, li) => {
+      if(!Array.isArray(para)) p.lead[li] = [para,para,para];
+      leadWrap.append(h("div",{class:"block"},[
+        h("div",{class:"row",style:"justify-content:space-between"},[h("strong",{},["段落 "+(li+1)]),h("button",{class:"small ghost",onclick:()=>{p.lead.splice(li,1);fillLead();}},["删除"])]),
+        triField(p.lead, li, null, true)
+      ]));
+    });
+    leadWrap.append(h("button",{class:"small",onclick:()=>{p.lead.push(["","",""]);fillLead();}},["+ 段落"]));
+  }
+  fillLead();
+
+  const det = h("details", { class:"card" }, [
+    h("summary", {}, [ (p.n?p.n+" · ":"") + (Array.isArray(p.title)?(p.title[0]||p.title[1]):p.title || "（未命名）") ]),
+    h("div", { class:"row" }, [
+      h("div",{style:"width:90px"},[h("label",{},["编号"]),textInput(p,"n",{ph:"01"})]),
+      h("div",{style:"flex:1"},[h("label",{},["Slug（网址）"]),textInput(p,"s",{ph:"my-project"})]),
+      h("div",{style:"flex:1"},[h("label",{},["图片文件夹"]),textInput(p,"dir",{ph:"my-project"})])
+    ]),
+    triField(p, "title", "标题"),
+    triField(p, "cn", "副标题"),
+    triField(p, "cat", "分类"),
+    h("div",{class:"row",style:"margin-top:6px"},[
+      h("div",{style:"flex:1"},[imageField(p,"cover",p.dir,"封面（缩略图）")]),
+      checkbox(p,"featured","首页展示")
+    ]),
+    h("label",{},["简介"]), leadWrap,
+    h("h3",{style:"margin-top:16px"},["内容（区块）"]), blocksWrap,
+    h("div",{class:"row",style:"margin-top:8px"},[
+      (function(){ const s=h("select",{style:"width:auto"},BLOCK_TYPES.map(t=>h("option",{value:t},[t])));
+        return h("div",{class:"row"},[s, h("button",{class:"small",onclick:()=>{p.blocks.push(newBlock(s.value));fillBlocks();}},["+ 添加区块"])]); })()
+    ]),
+    h("div",{class:"row",style:"margin-top:14px;border-top:1px solid var(--b);padding-top:10px"},[
+      h("button",{class:"small ghost",onclick:()=>{ if(index>0){ const [x]=STATE.splice(index,1); STATE.splice(index-1,0,x); renderApp(); } }},["↑ 上移"]),
+      h("button",{class:"small ghost",onclick:()=>{ if(index<STATE.length-1){ const [x]=STATE.splice(index,1); STATE.splice(index+1,0,x); renderApp(); } }},["↓ 下移"]),
+      h("button",{class:"small ghost",style:"color:#c0392b;border-color:#c0392b",onclick:()=>{ if(confirm("确定删除这个项目？")){ STATE.splice(index,1); renderApp(); } }},["删除项目"])
+    ])
+  ]);
+  return det;
+}
+
+/* ---------- 简历 CV ---------- */
+function cvPanel(){
+  const langs = [["fr","CVFR.pdf","法语"],["en","CVEN.pdf","英语"],["zh","CVZH.pdf","中文"]];
+  const rows = langs.map(([code,file,name]) => {
+    const fileI = h("input",{type:"file",accept:"application/pdf",class:"hide"});
+    const up = h("button",{class:"small ghost"},["⬆ 替换"]);
+    up.onclick=()=>fileI.click();
+    fileI.onchange=async()=>{ const f=fileI.files[0]; if(!f) return;
+      try{ setStatus("上传 "+file+"…"); await uploadBinary("cv/"+file, f, "admin: update "+file); setStatus(file+" 已更新 ✓"); }
+      catch(e){ setStatus("出错："+e.message,true); alert(e.message); } };
+    return h("div",{class:"row",style:"justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--b)"},[
+      h("div",{},[h("strong",{},[name]),h("span",{class:"muted"},["  cv/"+file])]),
+      h("div",{class:"row"},[ h("a",{class:"muted",href:"/cv/"+file,target:"_blank"},["查看 / 导出"]), up, fileI ])
+    ]);
+  });
+  return h("div",{class:"card"}, rows);
+}
+
+/* ---------- 主渲染 ---------- */
+function renderApp(){
+  bar.classList.remove("hide");
+  app.innerHTML = "";
+  app.append(
+    h("div",{class:"row",style:"justify-content:space-between"},[
+      h("h1",{},["后台管理 — 杨晨曦"]),
+      h("button",{class:"small ghost",onclick:()=>{ localStorage.removeItem("gh-token"); TOKEN=""; renderGate(); }},["退出登录"])
+    ]),
+    h("p",{class:"muted"},["编辑内容后点击「保存并发布」。每次保存都会在 GitHub 创建一次提交，并自动触发 Vercel 重新部署。"]),
+    h("h2",{},["简历 CV（PDF）"]),
+    cvPanel(),
+    h("h2",{},["项目（" + STATE.length + "）"]),
+    (function(){ const c=h("div",{}); STATE.forEach((p,i)=>c.append(projectEditor(p,i))); return c; })(),
+    h("div",{style:"margin-top:14px"},[
+      h("button",{class:"small",onclick:()=>{ STATE.push({ s:"new-project", n:String(STATE.length+1).padStart(2,"0"), dir:"new-project", cover:"cover.jpg", title:["","",""], cn:["","",""], cat:["","",""], lead:[["","",""]], blocks:[] }); renderApp(); window.scrollTo(0,document.body.scrollHeight); }},["+ 新建项目"])
+    ])
+  );
+}
+
+/* ---------- 保存 / 重新加载 ---------- */
+document.getElementById("saveBtn").onclick = async () => {
+  const btn = document.getElementById("saveBtn"); btn.disabled = true;
+  try {
+    setStatus("发布中…");
+    const json = JSON.stringify(STATE, null, 2);
+    const res = await ghPut("projects.json", utf8ToB64(json), projectsSha, "admin: 更新项目");
+    projectsSha = res.content.sha;
+    setStatus("已发布 ✓ — Vercel 正在重新部署（约 1 分钟）");
+  } catch(e){ setStatus("失败：" + e.message, true); alert(e.message); }
+  finally { btn.disabled = false; }
+};
+document.getElementById("reloadBtn").onclick = async () => {
+  if(!confirm("从 GitHub 重新加载？未保存的修改将丢失。")) return;
+  try { await loadAll(); setStatus("已重新加载。"); } catch(e){ setStatus(e.message, true); }
+};
+
+/* ---------- 启动 ---------- */
+if(TOKEN){ loadAll().catch(() => renderGate()); } else { renderGate(); }
+</script>
+</body>
+</html>

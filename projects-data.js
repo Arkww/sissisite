@@ -36,16 +36,16 @@
       ],
       blocks: [
         { k: "grid", cols: 2, items: [img("web-1.jpg", "1/2", ["网页设计 — 首页", "Maquette web — accueil", "Web design — home"]), img("web-2.jpg", "2/5", ["网页设计 — 产品页", "Maquette web — fiche produit", "Web design — product page"])] },
-        { k: "text", t: ["图尔·德·萨莱酒庄", "Château Tour de Sarrail", "Château Tour de Sarrail"], b: ["酒标灵感来自葡萄酒的生命周期——从种子到品鉴，辅以宣传视频与社媒活动。", "L'étiquette s'inspire du cycle de vie du vin — de la graine à la dégustation — complétée d'une vidéo et d'une campagne sociale.", "The label draws on wine's life cycle — from seed to tasting — with a promo video and social campaign."] },
+        { k: "text", t: ["图尔·德·萨莱酒庄", "Château Tour de Sarrail", "Château Tour de Sarrail"], b: ["为客户定制的酒庄，酒标灵感来自葡萄酒的生命周期——从种子到酿造，从装瓶到品鉴，概括了葡萄酒的一生，我还为其设计了宣传视频与社媒活动。", "L'étiquette s'inspire du cycle de vie du vin — de la graine à la dégustation — complétée d'une vidéo et d'une campagne sociale.", "The label draws on wine's life cycle — from seed to tasting — with a promo video and social campaign."] },
         { k: "grid", cols: 2, items: [img("sarrail-label.jpg", "11/10", ["酒标 — 2020", "Étiquette — 2020", "Label — 2020"]), img("sarrail-bottles.jpg", "3/4", ["实物瓶身", "Mise en situation", "Bottles in context"])] },
         { k: "img", src: "ig-1.jpg", r: "3/2", cap: ["Instagram 帖子", "Post Instagram", "Instagram post"] },
-        { k: "text", t: ["酒神之作", "Pièce de Dieu", "Pièce de Dieu"], b: ["以酒神巴克斯为灵感的酒标。", "Une étiquette inspirée de Bacchus, dieu du vin.", "A label inspired by Bacchus, god of wine."] },
+        { k: "text", t: ["酒神之作", "Pièce de Dieu", "Pièce de Dieu"], b: ["为客户定制，以酒神巴克斯为灵感的酒标。", "Une étiquette inspirée de Bacchus, dieu du vin.", "A label inspired by Bacchus, god of wine."] },
         { k: "grid", cols: 3, items: [img("dieu-1.jpg", "3/4", ["浅色酒标", "Étiquette claire", "Light label"], "contain"), img("dieu-2.jpg", "3/4", ["深色酒标", "Étiquette noire", "Dark label"], "contain"), img("dieu-3.jpg", "3/4", ["红白瓶", "Bouteilles rouge & blanc", "Red & white bottles"])] },
         { k: "text", t: ["藤蔓的秘密", "Le secret de la vigne", "The secret of the vine"], b: ["灵感源自显微镜下葡萄藤茎的横切面——左为红葡萄，右为白葡萄。", "Inspiré des coupes de tiges de vigne au microscope — à gauche les raisins noirs, à droite les blancs.", "Inspired by vine stems under the microscope — black grapes left, white grapes right."] },
         { k: "grid", cols: 4, items: [img("secret-1.jpg", "2/4", ["浅色酒标", "Étiquette claire", "Light label"]), img("secret-4.jpg", "3/4", ["深色酒标", "Étiquette sombre", "Dark label"]),img("secret-2.jpg", "1/2", ["深色酒标", "Étiquette sombre", "Dark label"]),img("secret-3.png", "3/4", ["深色酒标", "Étiquette sombre", "Dark label"])] },
-        { k: "text", t: ["《毕加索之梦》系列", "Série « Rêve de Picasso »", "“Picasso's Dream” series"], b: ["一组立体主义插画酒标，每款酒都有专属面孔。", "Une gamme d'étiquettes cubistes, chaque cuvée portant son propre visage.", "A range of cubist labels, each cuvée with its own face."] },
+        { k: "text", t: ["《毕加索之梦》系列", "Série « Rêve de Picasso »", "“Picasso's Dream” series"], b: ["一组立体主义插画酒标，每款酒都有专属面孔，专门为南法酿造的葡萄酒而设计。", "Une gamme d'étiquettes cubistes, chaque cuvée portant son propre visage.", "A range of cubist labels, each cuvée with its own face."] },
         { k: "grid", cols: 4, items: [img("picasso-1.jpg", "3/4", ["", "", ""], "contain"), img("picasso-2.jpg", "3/4", ["", "", ""], "contain"), img("picasso-3.jpg", "3/4", ["", "", ""], "contain"), img("picasso-4.jpg", "3/4", ["", "", ""], "contain")] },
-        { k: "text", t: ["「金醉」礼品袋", "« Rêve doré » — sacs cadeaux", "“Golden Dream” gift bags"], b: ["五款礼品袋，各由一种大理石纹理与专属意象承载。", "Cinq déclinaisons de sacs, chacune portée par une matière marbrée et une intention propre.", "Five bag variants, each carried by a marbled material and its own intent."] },
+        { k: "text", t: ["「醉梦鎏金」礼品袋", "« Rêve doré » — sacs cadeaux", "“Golden Dream” gift bags"], b: ["五款礼品袋，各由一种大理石纹理与专属意象承载。", "Cinq déclinaisons de sacs, chacune portée par une matière marbrée et une intention propre.", "Five bag variants, each carried by a marbled material and its own intent."] },
         { k: "cards", cols: 5, items: [
           { src: "bag-blanc.jpg", r: "2/3", sw: "#EDEDE9", t: ["珍珠白", "Blanc nacré", "Pearl white"], cn: "细浪珍珠白", b: ["清新雅致，取自海洋与珍珠。", "Frais et délicat, inspiré de l'océan.", "Fresh and delicate, from the ocean."] },
           { src: "bag-jaune.jpg", r: "2/3", sw: "#E9C84A", t: ["雏菊黄", "Jaune marguerite", "Daisy yellow"], cn: "花语雏菊黄", b: ["明亮日常，象征希望与纯净。", "Lumineux, symbole d'espoir et de pureté.", "Bright, a symbol of hope and purity."] },
@@ -64,10 +64,20 @@
         ["沉浸式内容帮助舒缓压力，带来慰藉与宁静。如佩戴手表还可以实时检测你的压力数据，为你的心理健康保驾护航。", "Ses contenus immersifs apaisent le stress et apportent réconfort et sérénité.", "Its immersive content eases stress and brings comfort and calm."]
       ],
       blocks: [
+        { k: "video", src: "moonzzz.mp4", r: "16/9", cap: ["动态影像 — 赛博朋克", "Animation — Cyberpunk", "Motion — Cyberpunk"] },
         { k: "grid", cols: 2, items: [img("device-1.jpg", "9/16", ["首页 — 移动端", "Écran d'accueil — mobile", "Home — mobile"]), img("device-2.jpg", "9/16", ["智能手表 — 即时压力", "Montre connectée — stress", "Smartwatch — instant stress"])] },
         { k: "text", t: ["读取压力等级", "Lire le niveau de pression", "Reading the pressure level"], b: ["两个圆环表达内在状态与外在状态。重叠代表平静，压力为零；越分离,压力越大。共分五级。", "Deux cercles traduisent l'état intérieur et extérieur. Superposés = calme, pression nulle ; plus ils s'éloignent, plus le stress grandit — cinq paliers.", "Two circles express inner and outer state. Overlapping = calm, zero pressure; the further apart, the more stress — five levels."] },
-        { k: "img", src: "pressure.jpg", r: "6/1", cap: ["图示 — 五级压力", "Schéma — cinq niveaux", "Diagram — five levels"] },
-        { k: "grid", cols: 3, items: [img("ui-1.jpg", "9/19", ["启动页", "Écran d'ouverture", "Splash screen"]), img("ui-2.jpg", "9/19", ["脆弱的平衡 — 语音", "« Équilibre fragile »", "“Fragile balance”"]), img("ui-3.jpg", "9/19", ["邮箱登录", "Connexion e-mail", "Email login"])] },
+        { k: "img", src: "pressure.jpg", r: "6/1", cap: ["图示 — 五级压力", "Schéma — cinq niveaux", "Diagram — five levels"] }, 
+        { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
+        { k: "grid", cols: 2, items: [img("1.jpg", "16/9", ["城市海报", "Affiche urbaine", "Urban poster"]), img("2.jpg", "16/9", ["Instagram 帖子", "Posts Instagram", "Instagram posts"])] }, 
+        { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
+
+       
+        { k: "grid", cols: 1, items: [img("3.jpg", "16/9", ["城市海报", "Affiche urbaine", "Urban poster"])] }, 
+        { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
+        { k: "grid", cols: 2, items: [img("4.jpg", "16/9", ["城市海报", "Affiche urbaine", "Urban poster"]), img("5.jpg", "16/9", ["Instagram 帖子", "Posts Instagram", "Instagram posts"])] }, 
+        { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
+        { k: "grid", cols: 1, items: [img("6.jpg", "16/9", ["城市海报", "Affiche urbaine", "Urban poster"])] }, 
         { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
         { k: "grid", cols: 2, items: [img("poster.jpg", "3/2", ["城市海报", "Affiche urbaine", "Urban poster"]), img("posts.jpg", "3/2", ["Instagram 帖子", "Posts Instagram", "Instagram posts"])] }
       ]
@@ -145,6 +155,7 @@
       ],
       blocks: [
         { k: "grid", cols: 2, items: [img("1.jpg", "4/3", ["室外指示牌", "Panneau — extérieur", "Sign — exterior"]), img("2.jpg", "4/3", ["室内平面图", "Plan mural — intérieur", "Wall map — interior"])] }, 
+        { k: "text", t: ["表情包展示", "Présentation des emojis", "Emojis Showcase"]},
         { k: "grid", cols: 3, items: [img("3.jpg", "4/9", ["室外指示牌", "Panneau — extérieur", "Sign — exterior"]), img("4.jpg", "4/9", ["室内平面图", "Plan mural — intérieur", "Wall map — interior"]), img("5.jpg", "4/9", ["室内平面图", "Plan mural — intérieur", "Wall map — interior"])] }, 
         { k: "img", src: "grid.jpg", r: "16/9", cap: ["完整表情 — 25 个表情", "Planche complète — 25 expressions", "Full sheet — 25 expressions"] }
       ]
@@ -195,8 +206,11 @@
       ],
       blocks: [
         { k: "grid", cols: 1, items: [img("p-1.jpg", "5/4", ["作品", "Œuvre", "Work"])] },
-        { k: "grid", cols: 1, items: [img("p-2.jpg", "5/3", ["作品", "Œuvre", "Work"])] },
-        { k: "grid", cols: 1, items: [img("p-3.jpg", "5/3", ["作品", "Œuvre", "Work"])] },
+        { k: "text", t: ["社媒推广", "Promotion sociale", "Social promotion"], b: ["一系列与应用风格一致的推广内容。", "Une série de publications cohérentes avec le style de l'app.", "A set of posts consistent with the app's style."] },
+        { k: "grid", cols: 1, items: [img("1.jpg", "5/3", ["作品", "Œuvre", "Work"])] },
+
+        { k: "grid", cols: 2, items: [img("p-2.jpg", "3/5", ["作品", "Œuvre", "Work"]), img("p-3.jpg", "3/5", ["作品", "Œuvre", "Work"])] },
+
         { k: "grid", cols: 3, items: [img("p-4.jpg", "3/5", ["作品", "Œuvre", "Work"]), img("p-5.jpg", "3/5", ["作品", "Œuvre", "Work"]), img("p-6.jpg", "3/5", ["作品", "Œuvre", "Work"])] },
       ]
     },
@@ -212,6 +226,32 @@
         { k: "text", t: ["产品摄影&海报", "Photographie de produit & Affiche", "Product Photography & Poster"], b: ["我首先针对主打产品进行摄影，通过构图与光线突出产品特点，再从中筛选合适的照片进行海报设计，用于品牌宣传。", "Je réalise d’abord des photographies des produits phares, puis je sélectionne les images adaptées pour créer des affiches promotionnelles.", "I first photograph the key products, then select the best images to create promotional posters."] },
         { k: "grid", cols: 2, items: [img("1.jpg", "3/4", ["A3 海报 — 1", "Affiche A3 — 1", "A3 poster — 1"]), img("2.jpg", "3/4", ["A3 海报 — 2", "Affiche A3 — 2", "A3 poster — 2"])] },
         { k: "grid", cols: 2, items: [img("3.png", "1/1", ["视觉物料", "Visuel", "Visual"], "contain"), img("4.png", "1/1", ["视觉物料", "Visuel", "Visual"], "contain")] }
+      ]
+    },
+    {
+      s: "nihon-buyo", n: "13", dir: "nihon-buyo", a: "purple", cover: "cover.jpg",
+      title: "Nihon Buyô", cn: ["日本舞踊", "Danse classique japonaise", "Japanese classical dance"],
+      cat: ["文化编辑 · 展览视觉", "Édition culturelle · Signalétique", "Cultural editorial · Exhibition"],
+      lead: [
+        ["Nihon Buyo 是日本设计师田中一光（Ikko Tanaka）的经典海报作品。本项目以其作品为灵感进行再创作，设计了一系列全新的日本歌舞伎人物海报，并将视觉元素进一步延伸至文创产品、宣传物料及社交媒体视觉设计，探索传统文化在当代视觉传播中的更多可能性。", "Inspiré de l’affiche emblématique Nihon Buyo d’Ikko Tanaka, ce projet propose une nouvelle interprétation des personnages du kabuki, déclinée en affiches, produits créatifs et contenus pour les réseaux sociaux.", "Inspired by Ikko Tanaka’s iconic Nihon Buyo poster, this project reinterprets traditional Kabuki characters through a series of posters, creative products, and social media content."]
+      ],
+      blocks: [
+        { k: "text", t: ["原海报", "Affiche originale", "Original Poster"]},
+        { k: "grid", cols: 2, items: [img("1-1.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("1-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
+        { k: "img", src: "3.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "grid", cols: 2, items: [img("4-1.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("4-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
+        { k: "grid", cols: 2, items: [img("5.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("5-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
+        { k: "img", src: "6.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "grid", cols: 2, items: [img("8.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("9.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
+        { k: "img", src: "10.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "11.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "12.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "13.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "14.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "grid", cols: 2, items: [img("15.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("16.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
+        { k: "img", src: "17.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "18.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
+        { k: "img", src: "19.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] }
       ]
     },
     {
@@ -261,25 +301,16 @@
         ["访问我的设计：https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0，此链接包括所有设计构思，草图及成品。", "Voir mes designs : https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — ce lien réunit toutes les intentions, croquis et réalisations.", "View my designs: https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — it gathers all the concepts, sketches and final work."]
       ],
       blocks: [
+        { k: "text", t: ["网页", "Site Web", "Web Page"]},
         { k: "grid", cols: 1, items: [img("1.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
+        { k: "text", t: ["邮件", "E-mail", "E-mail"]},
         { k: "grid", cols: 1, items: [img("2.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
+        { k: "text", t: ["品牌定位", "Positionnement de marque", "Brand Positioning"]},
         { k: "grid", cols: 1, items: [img("3.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
+        { k: "text", t: ["Moodboard", "Moodboard", "Moodboard"]},
         { k: "grid", cols: 2, items: [img("5.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"]), img("4.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
+        { k: "text", t: ["产品设计", "Design produit", "Product Design"]},
         { k: "grid", cols: 1, items: [img("6.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
-        { k: "grid", cols: 1, items: [img("7.jpg", "16/9", ["情绪板", "Moodboard", "Moodboard"])] },
-      ]
-    },
-    {
-      s: "freedent", n: "15", dir: "freedent", a: "teal", cover: "cover.png",
-      title: "Freedent", cn: ["益达口香糖", "Chewing-gum Freedent", "Freedent chewing gum"],
-      cat: ["包装设计 · 口香糖", "Packaging · Chewing-gum", "Packaging · Chewing gum"],
-      lead: [
-        ["我为freedent做了全新的品牌升级和包装设计。", "Un exercice de packaging pour les chewing-gums Freedent, avec une identité couleur forte par parfum.", "A packaging exercise for Freedent gum, with a strong colour identity per flavour."]
-      ],
-      blocks: [
-        { k: "grid", cols: 2, items: [img("1.jpg", "5/3", ["排版 — 3", "Mise en page — 3", "Layout — 3"]), img("2.jpg", "5/3", ["封面", "Couverture", "Cover"])] }, 
-        { k: "grid", cols: 2, items: [img("3.jpg", "5/3", ["排版 — 3", "Mise en page — 3", "Layout — 3"]), img("4.jpg", "5/3", ["封面", "Couverture", "Cover"])] }, 
-        { k: "grid", cols: 4, items: [img("fraise.png", "5/8", ["薄荷原味", "Menthe nature", "Mint original"], "contain"), img("mint.png", "5/8", ["强劲薄荷", "Menthe forte", "Strong mint"], "contain"),img("strawberry.png", "5/8", ["草莓味", "Fraise", "Strawberry"], "contain"), img("blueberry.png", "5/8", ["蓝莓味", "Myrtille", "Blueberry"], "contain")] },  
       ]
     },
     {
@@ -301,9 +332,13 @@
         ["为 Decathlon Coach App 进行 UI/UX 优化与界面升级，重新梳理信息架构与视觉呈现，提升整体使用体验。以下为升级后的页面展示。", "Optimisation et refonte UI/UX de l’application Decathlon Coach, visant à améliorer l’interface visuelle et l’expérience utilisateur. Voici les écrans après amélioration.", "UI/UX optimisation and redesign for the Decathlon Coach App, enhancing the visual interface and user experience. Here are the redesigned screens."]
       ],
       blocks: [
+        { k: "text", t: ["起始页", "Page d’accueil", "Home Page"]},
         { k: "grid", cols: 4, items: [img("1.jpg", "7/15", ["饮品 — 阳光下", "Boisson — au soleil", "Drink — in the sun"]), img("2.jpg", "7/15", ["气泡与覆盆子", "Bulles & framboise", "Bubbles & raspberry"]), img("3.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"]), img("4.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"])] },
+        { k: "text", t: ["设置", "Paramètres", "Settings"]},
         { k: "grid", cols: 4, items: [img("5.jpg", "7/15", ["饮品 — 阳光下", "Boisson — au soleil", "Drink — in the sun"]), img("6.jpg", "7/15", ["气泡与覆盆子", "Bulles & framboise", "Bubbles & raspberry"]), img("7.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"]), img("8.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"])] },
+        { k: "text", t: ["Box", "Box", "Box"]},
         { k: "grid", cols: 4, items: [img("9.jpg", "7/15", ["饮品 — 阳光下", "Boisson — au soleil", "Drink — in the sun"]), img("10.jpg", "7/15", ["气泡与覆盆子", "Bulles & framboise", "Bubbles & raspberry"]), img("11.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"]), img("12.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"])] },
+        { k: "text", t: ["Yoga", "Yoga", "Yoga"]},
         { k: "grid", cols: 4, items: [img("13.jpg", "7/15", ["饮品 — 阳光下", "Boisson — au soleil", "Drink — in the sun"]), img("14.jpg", "7/15", ["气泡与覆盆子", "Bulles & framboise", "Bubbles & raspberry"]), img("15.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"]), img("16.jpg", "7/15", ["鸡尾酒 — 干杯", "Cocktails — trinquons", "Cocktails — cheers"])] },
       ]
     },
@@ -312,45 +347,11 @@
       title: "Blender", cn: ["Blender 练习", "Exercices Blender", "Blender studies"],
       cat: ["三维建模 · 练习", "Modélisation 3D · Exercices", "3D modelling · Studies"],
       lead: [
-        ["一系列 Blender 三维建模与动画练习,探索光影、材质与运镜。", "Une série d'exercices de modélisation et d'animation 3D sous Blender, autour de la lumière, des matières et du mouvement de caméra.", "A series of Blender 3D modelling and animation studies exploring light, materials and camera movement."]
+        ["一系列 Blender 三维建模与动画练习, 学会了基础的建模与动画。", "Une série d'exercices de modélisation et d'animation 3D sous Blender, autour de la lumière, des matières et du mouvement de caméra.", "A series of Blender 3D modelling and animation studies exploring light, materials and camera movement."]
       ],
       blocks: [
         { k: "video", src: "video-1.mp4", r: "16/9", cap: ["动画练习 — 1", "Animation — 1", "Animation — 1"] },
         { k: "video", src: "video-2.mp4", r: "16/9", cap: ["动画练习 — 陋室", "Animation — la chaumière", "Animation — the cottage"] }
-      ]
-    },
-    {
-      s: "tuina-massage", n: "21", dir: "tuina-massage", a: "teal", cover: "cover.png",
-      title: ["推拿世家", "Maison de massage Tuina", "Tuina Massage House"], cn: ["推拿世家", "Maison de massage Tuina", "Tuina massage house"],
-      cat: ["店铺传播 · 平面", "Communication commerce · Print", "Shop communication · Print"],
-      lead: [
-        ["为「推拿世家」按摩沙龙设计的传播物料:海报、优惠与社媒内容。", "Supports de communication pour le salon de massage « Tuina Shijia » : affiches, offres et contenus sociaux.", "Communication materials for the “Tuina Shijia” massage salon: posters, offers and social content."]
-      ],
-      blocks: [
-        { k: "grid", cols: 2, items: [img("cover.png", "3/4", ["沙龙海报", "Affiche du salon", "Salon poster"], "contain"), img("offre.jpg", "3/4", ["限时优惠", "Offre limitée", "Limited offer"], "contain")] }
-      ]
-    },
-    {
-      s: "cavalry", n: "22", dir: "cavalry", a: "yellow", cover: "cover.png",
-      title: "Cavalry", cn: ["字母练习", "Exercices de lettrage", "Lettering studies"],
-      cat: ["字体设计 · 练习", "Lettrage · Exercices", "Lettering · Studies"],
-      lead: [
-        ["一组字母造型与字体设计练习,探索节奏、结构与个性。", "Une série d'exercices de lettrage et de type design autour du rythme, de la structure et du caractère.", "A set of lettering and type studies exploring rhythm, structure and character."]
-      ],
-      blocks: [
-        { k: "grid", cols: 3, items: [img("F.mov", "1/1", ["字母 S", "Lettre S", "Letter S"]), img("L.mov", "1/1", ["字母 R", "Lettre R", "Letter R"]), img("O.mov", "1/1", ["字母 O", "Lettre O", "Letter O"])] },
-        { k: "grid", cols: 3, items: [img("W.mov", "1/1", ["字母 S", "Lettre S", "Letter S"]), img("R.mov", "1/1", ["字母 R", "Lettre R", "Letter R"]), img("S.mov", "1/1", ["字母 O", "Lettre O", "Letter O"])] }
-      ]
-    },
-    {
-      s: "comic-web", n: "23", dir: "comic-web", a: "pink", cover: "cover.png",
-      title: ["漫画网页", "Site BD", "Comic Web"], cn: ["漫画网页", "Site bande dessinée", "Comic website"],
-      cat: ["网页 · 叙事", "Web · Narration", "Web · Storytelling"],
-      lead: [
-        ["一个漫画风格的叙事网页项目,以分镜与滚动叙事讲述故事。完整方案见下方 PDF。", "Un projet de site narratif en bande dessinée, story-telling au fil du défilement. Dossier complet en PDF ci-dessous.", "A comic-style narrative website project, storytelling through scrolling. Full case as PDF below."]
-      ],
-      blocks: [
-        { k: "pdf", src: "Sissi-presentation.pdf", cap: ["完整方案 — PDF", "Présentation complète — PDF", "Full presentation — PDF"] }
       ]
     },
     {
@@ -367,75 +368,50 @@
       ]
     },
     {
-      s: "nihon-buyo", n: "13", dir: "nihon-buyo", a: "purple", cover: "cover.jpg",
-      title: "Nihon Buyô", cn: ["日本舞踊", "Danse classique japonaise", "Japanese classical dance"],
-      cat: ["文化编辑 · 展览视觉", "Édition culturelle · Signalétique", "Cultural editorial · Exhibition"],
+      s: "tuina-massage", n: "21", dir: "tuina-massage", a: "teal", cover: "cover.png",
+      title: ["推拿世家", "Maison de massage Tuina", "Tuina Massage House"], cn: ["推拿世家", "Maison de massage Tuina", "Tuina massage house"],
+      cat: ["店铺传播 · 平面", "Communication commerce · Print", "Shop communication · Print"],
       lead: [
-        ["Nihon Buyo 是日本设计师田中一光（Ikko Tanaka）的经典海报作品。本项目以其作品为灵感进行再创作，设计了一系列全新的日本歌舞伎人物海报，并将视觉元素进一步延伸至文创产品、宣传物料及社交媒体视觉设计，探索传统文化在当代视觉传播中的更多可能性。", "Inspiré de l’affiche emblématique Nihon Buyo d’Ikko Tanaka, ce projet propose une nouvelle interprétation des personnages du kabuki, déclinée en affiches, produits créatifs et contenus pour les réseaux sociaux.", "Inspired by Ikko Tanaka’s iconic Nihon Buyo poster, this project reinterprets traditional Kabuki characters through a series of posters, creative products, and social media content."]
+        ["「推拿世家」是在法国及北非有十几家门店的中式高端按摩品牌: 我会定期为品牌设计更新海报、优惠、价目表与社媒内容。", "Supports de communication pour le salon de massage « Tuina Shijia » : affiches, offres et contenus sociaux.", "Communication materials for the “Tuina Shijia” massage salon: posters, offers and social content."]
       ],
       blocks: [
-        { k: "text", t: ["原海报", "Affiche originale", "Original Poster"]},
-        { k: "grid", cols: 2, items: [img("1-1.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("1-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
-        { k: "img", src: "3.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "grid", cols: 2, items: [img("4-1.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("4-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
-        { k: "grid", cols: 2, items: [img("5.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("5-2.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
-        { k: "img", src: "6.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "grid", cols: 2, items: [img("8.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("9.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
-        { k: "img", src: "10.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "11.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "12.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "13.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "14.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "grid", cols: 2, items: [img("15.jpg", "16/9", ["排版 — 1", "Mise en page — 1", "Layout — 1"]), img("16.jpg", "16/9", ["排版 — 2", "Mise en page — 2", "Layout — 2"])] },
-        { k: "img", src: "17.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "18.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] },
-        { k: "img", src: "19.jpg", r: "16/9", cap: ["网页版本", "Version web", "Web version"] }
+        { k: "grid", cols: 2, items: [img("cover.png", "3/4", ["沙龙海报", "Affiche du salon", "Salon poster"], "contain"), img("offre.jpg", "3/4", ["限时优惠", "Offre limitée", "Limited offer"], "contain")] }
       ]
     },
     {
-      s: "jiangnan-zhigong", n: "16", dir: "jiangnan-zhigong", a: "red", cover: "cover.png",
-      title: ["江南之贡", "Tribut du Jiangnan", "Jiangnan Tribute"], cn: ["江南之贡", "Jiangnan Zhigong", "Jiangnan Tribute"],
-      cat: ["海报系列 · 非遗", "Série d'affiches · Artisanat", "Poster series · Craft"],
+      s: "cavalry", n: "22", dir: "cavalry", a: "yellow", cover: "cover.png",
+      title: "Cavalry", cn: ["字母练习", "Exercices de lettrage", "Lettering studies"],
+      cat: ["字体设计 · 练习", "Lettrage · Exercices", "Lettering · Studies"],
       lead: [
-        ["「江南之贡」海报系列,以茶叶、苏绣、大闸蟹、紫砂壶等江南意象展现地方工艺之美。", "La série d'affiches « Jiangnan Zhigong » célèbre l'artisanat du Jiangnan — thé, broderie Su, crabes, théières en argile.", "The “Jiangnan Zhigong” poster series celebrates Jiangnan craft — tea, Su embroidery, crabs, clay teapots."]
+        ["一组动态字母设计（FLOWER），使用cavalry进行创作。", "Une série d'exercices de lettrage et de type design autour du rythme, de la structure et du caractère.", "A set of lettering and type studies exploring rhythm, structure and character."]
       ],
       blocks: [
-        { k: "img", src: "hero.png", r: "16/9", cap: ["系列组合", "Ensemble de la série", "Series set"] },
-        { k: "text", t: ["标志", "Le logo", "The logo"], b: ["三个版本,适配所有背景。", "Décliné en trois versions, pour s'adapter à tous les fonds.", "In three versions, to suit any background."] },
-        { k: "grid", cols: 3, items: [img("the.png", "3/4", ["茶叶海报", "Affiche — thé", "Poster — tea"]), img("suxiu.png", "3/4", ["苏绣海报", "Affiche — broderie", "Poster — embroidery"]), img("crab.png", "3/4", ["大闸蟹海报", "Affiche — crabe", "Poster — crab"])] }
+        { k: "grid", cols: 3, items: [img("F.mov", "1/1", ["字母 S", "Lettre S", "Letter S"]), img("L.mov", "1/1", ["字母 R", "Lettre R", "Letter R"]), img("O.mov", "1/1", ["字母 O", "Lettre O", "Letter O"])] },
+        { k: "grid", cols: 3, items: [img("W.mov", "1/1", ["字母 S", "Lettre S", "Letter S"]), img("R.mov", "1/1", ["字母 R", "Lettre R", "Letter R"]), img("S.mov", "1/1", ["字母 O", "Lettre O", "Letter O"])] }
       ]
     },
     {
-      s: "moto", n: "25", dir: "moto", a: "red", cover: "cover.png",
-      title: ["机车", "Moto", "Motorcycle"], cn: ["机车", "Moto", "Motorcycle"],
-      cat: ["插画 · 个人创作", "Illustration · Travaux personnels", "Illustration · Personal work"],
+      s: "freedent", n: "15", dir: "freedent", a: "teal", cover: "cover.png",
+      title: "Freedent", cn: ["益达口香糖", "Chewing-gum Freedent", "Freedent chewing gum"],
+      cat: ["包装设计 · 口香糖", "Packaging · Chewing-gum", "Packaging · Chewing gum"],
       lead: [
-        ["以机车为主题的插画创作,探索线条、速度感与色彩。", "Une illustration autour de la moto, explorant le trait, la vitesse et la couleur.", "Motorcycle-themed illustration exploring line, speed and colour."]
+        ["我为freedent做了全新的品牌升级和包装设计。", "Un exercice de packaging pour les chewing-gums Freedent, avec une identité couleur forte par parfum.", "A packaging exercise for Freedent gum, with a strong colour identity per flavour."]
       ],
       blocks: [
-        { k: "grid", cols: 1, items: [img("cover.png", "1/1", ["插画", "Illustration", "Illustration"], "contain")] }
+        { k: "grid", cols: 2, items: [img("1.jpg", "5/3", ["排版 — 3", "Mise en page — 3", "Layout — 3"]), img("2.jpg", "5/3", ["封面", "Couverture", "Cover"])] }, 
+        { k: "grid", cols: 2, items: [img("3.jpg", "5/3", ["排版 — 3", "Mise en page — 3", "Layout — 3"]), img("4.jpg", "5/3", ["封面", "Couverture", "Cover"])] }, 
+        { k: "grid", cols: 4, items: [img("fraise.png", "5/8", ["薄荷原味", "Menthe nature", "Mint original"], "contain"), img("mint.png", "5/8", ["强劲薄荷", "Menthe forte", "Strong mint"], "contain"),img("strawberry.png", "5/8", ["草莓味", "Fraise", "Strawberry"], "contain"), img("blueberry.png", "5/8", ["蓝莓味", "Myrtille", "Blueberry"], "contain")] },  
       ]
     },
     {
-      s: "typo-posters", n: "28", dir: "typo-posters", a: "ink", cover: "cover.jpg",
-      title: ["文字现象", "Phénomènes typographiques", "Typographic Phenomena"], cn: ["文字现象海报", "Affiches typographiques", "Typographic posters"],
-      cat: ["实验字体 · 海报", "Typographie expérimentale · Affiches", "Experimental type · Posters"],
+      s: "comic-web", n: "23", dir: "comic-web", a: "pink", cover: "cover.png",
+      title: ["漫画网页", "Site BD", "Comic Web"], cn: ["漫画网页", "Site bande dessinée", "Comic website"],
+      cat: ["网页 · 叙事", "Web · Narration", "Web · Storytelling"],
       lead: [
-        ["「文字现象」海报系列,以《二泉映月》《十面埋伏》《高山流水》等古曲为题,用文字造型表达音乐意象。", "La série « Phénomènes typographiques » traduit des morceaux classiques chinois en formes de lettres — musique devenue image.", "The “Typographic phenomena” series turns classical Chinese pieces into letterforms — music become image."]
+        ["一个漫画风格的叙事网页项目,以分镜与滚动叙事讲述故事。完整方案见下方 PDF。", "Un projet de site narratif en bande dessinée, story-telling au fil du défilement. Dossier complet en PDF ci-dessous.", "A comic-style narrative website project, storytelling through scrolling. Full case as PDF below."]
       ],
       blocks: [
-        { k: "grid", cols: 3, items: [img("cover.jpg", "5/7", ["二泉映月", "« Er Quan Ying Yue »", "“Er Quan Ying Yue”"]), img("p-2.jpg", "5/7", ["十面埋伏", "« Shi Mian Mai Fu »", "“Shi Mian Mai Fu”"]), img("p-3.jpg", "5/7", ["高山流水", "« Gao Shan Liu Shui »", "“Gao Shan Liu Shui”"])] }
-      ]
-    },
-    {
-      s: "student-union", n: "29", dir: "student-union", a: "red", cover: "cover.png",
-      title: ["学联", "Union étudiante", "Student Union"], cn: ["学联视觉", "Identité de l'union étudiante", "Student union identity"],
-      cat: ["社团视觉 · 插画", "Identité associative · Illustration", "Association identity · Illustration"],
-      lead: [
-        ["为学生联合会设计的视觉物料与吉祥物插画,活泼亲切,贴近学生生活。", "Supports visuels et illustrations de mascotte pour l'union des étudiants — un ton vif et proche de la vie étudiante.", "Visual materials and mascot illustrations for the student union — a lively tone close to student life."]
-      ],
-      blocks: [
-        { k: "grid", cols: 2, items: [img("cover.png", "1/1", ["主视觉", "Visuel principal", "Key visual"], "contain"), img("s-2.png", "1/1", ["素材", "Élément", "Element"], "contain")] }
+        { k: "pdf", src: "Sissi-presentation.pdf", cap: ["完整方案 — PDF", "Présentation complète — PDF", "Full presentation — PDF"] }
       ]
     },
   ];

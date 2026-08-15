@@ -4,7 +4,7 @@
    project detail pages. Content from projects-data.js (PF_DATA).
    ============================================================ */
 
-const DATA = (typeof window !== "undefined" && window.PF_DATA) || [];
+let DATA = [];   // loaded from projects.json at boot (see bottom of file)
 
 /* ---------- language state ---------- */
 const LANGS = ["zh", "fr", "en"];
@@ -593,10 +593,20 @@ window.addEventListener("scroll", () => {
   navRoot.classList.toggle("scrolled", window.scrollY > 40);
 }, { passive: true });
 
-/* ---------- boot ---------- */
-if (!DATA.length) {
-  mainRoot.innerHTML = `<p style="padding:120px 24px;color:var(--ink-55)">Impossible de charger les projets (projects-data.js). Ouvre le site via un petit serveur local.</p>`;
-  navRoot.innerHTML = navHTML();
-} else {
+/* ---------- boot: load content from projects.json ---------- */
+navRoot.innerHTML = navHTML();
+(async function boot() {
+  try {
+    const res = await fetch("projects.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    DATA = await res.json();
+  } catch (e) {
+    // fallback for file:// or a failed fetch
+    if (typeof window !== "undefined" && window.PF_DATA) DATA = window.PF_DATA;
+  }
+  if (!DATA.length) {
+    mainRoot.innerHTML = `<p style="padding:120px 24px;color:var(--ink-55)">Impossible de charger les projets. Ouvre le site via un petit serveur local (ou vérifie projects.json).</p>`;
+    return;
+  }
   render();
-}
+})();
