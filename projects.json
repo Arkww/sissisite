@@ -185,7 +185,11 @@
     "a": "purple",
     "cover": "cover.jpg",
     "featured": true,
-    "title": "Crus & Vintages",
+    "title": [
+      "Crus & Vintages",
+      "Crus & Vintages",
+      "Crus & Vintages"
+    ],
     "cn": [
       "葡萄酒品牌",
       "Marque de vin",
@@ -550,7 +554,11 @@
     "a": "blue",
     "cover": "cover.jpg",
     "featured": true,
-    "title": "MOONZZZ",
+    "title": [
+      "MOONZZZ",
+      "MOONZZZ",
+      "MOONZZZ"
+    ],
     "cn": [
       "AI 心理健康应用",
       "Application de bien-être IA",
@@ -987,7 +995,11 @@
     "a": "pink",
     "cover": "cover.png",
     "featured": true,
-    "title": "Cyberpunk",
+    "title": [
+      "Cyberpunk",
+      "Cyberpunk",
+      "Cyberpunk"
+    ],
     "cn": [
       "赛博朋克 · 三维动画",
       "Cyberpunk · Animation 3D",
@@ -1180,7 +1192,11 @@
     "a": "green",
     "cover": "cover.png",
     "featured": true,
-    "title": "Château Pierron",
+    "title": [
+      "Château Pierron",
+      "Château Pierron",
+      "Château Pierron"
+    ],
     "cn": [
       "皮埃隆酒庄",
       "Domaine viticole",
@@ -1302,6 +1318,11 @@
           "宣传单与包装袋",
           "Flyers & pochettes",
           "Flyers & bags"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -1389,6 +1410,11 @@
           "表情包展示",
           "Présentation des emojis",
           "Emojis Showcase"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -1746,6 +1772,11 @@
           "专业人像",
           "Portraits professionnels",
           "Professional portraits"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -1778,6 +1809,11 @@
           "建筑摄影",
           "Photographie d'architecture",
           "Architecture photography"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -1819,6 +1855,11 @@
           "情景摄影",
           "Photographie d'ambiance",
           "Lifestyle photography"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -1993,7 +2034,11 @@
     "dir": "lush",
     "a": "green",
     "cover": "cover.jpg",
-    "title": "LUSH × Halloween",
+    "title": [
+      "LUSH × Halloween",
+      "LUSH × Halloween",
+      "LUSH × Halloween"
+    ],
     "cn": [
       "LUSH 万圣节",
       "LUSH Halloween",
@@ -2093,7 +2138,11 @@
     "dir": "nihon-buyo",
     "a": "purple",
     "cover": "cover.jpg",
-    "title": "Nihon Buyô",
+    "title": [
+      "Nihon Buyô",
+      "Nihon Buyô",
+      "Nihon Buyô"
+    ],
     "cn": [
       "日本舞踊",
       "Danse classique japonaise",
@@ -2118,6 +2167,11 @@
           "原海报",
           "Affiche originale",
           "Original Poster"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2377,6 +2431,11 @@
           "金",
           "Métal",
           "Metal"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2409,6 +2468,11 @@
           "木",
           "Bois",
           "Wood"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2441,6 +2505,11 @@
           "水",
           "Eau",
           "Water"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2473,6 +2542,11 @@
           "火",
           "Feu",
           "fire"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2505,6 +2579,11 @@
           "土",
           "Terre",
           "Earth"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2612,7 +2691,11 @@
     "a": "teal",
     "cover": "cover.jpg",
     "featured": true,
-    "title": "BOBOCHACHA",
+    "title": [
+      "BOBOCHACHA",
+      "BOBOCHACHA",
+      "BOBOCHACHA"
+    ],
     "cn": [
       "餐厅品牌",
       "Marque de restaurant",
@@ -2747,7 +2830,11 @@
     "dir": "sonoa-nuxe",
     "a": "pink",
     "cover": "cover.jpg",
-    "title": "SONOA × NUXE",
+    "title": [
+      "SONOA × NUXE",
+      "SONOA × NUXE",
+      "SONOA × NUXE"
+    ],
     "cn": [
       "娇韵诗 × 音乐",
       "Marque beauté × musique",
@@ -2777,6 +2864,11 @@
           "网页",
           "Site Web",
           "Web Page"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2800,6 +2892,11 @@
           "邮件",
           "E-mail",
           "E-mail"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2823,6 +2920,11 @@
           "品牌定位",
           "Positionnement de marque",
           "Brand Positioning"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2846,6 +2948,11 @@
           "Moodboard",
           "Moodboard",
           "Moodboard"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2878,6 +2985,11 @@
           "产品设计",
           "Design produit",
           "Product Design"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -2903,7 +3015,11 @@
     "dir": "air-france",
     "a": "blue",
     "cover": "cover.jpg",
-    "title": "Air France",
+    "title": [
+      "Air France",
+      "Air France",
+      "Air France"
+    ],
     "cn": [
       "法国航空 · 社媒",
       "Air France · Réseaux sociaux",
@@ -2939,7 +3055,11 @@
     "dir": "decathlon-uiux",
     "a": "blue",
     "cover": "cover.jpg",
-    "title": "Décathlon UI/UX",
+    "title": [
+      "Décathlon UI/UX",
+      "Décathlon UI/UX",
+      "Décathlon UI/UX"
+    ],
     "cn": [
       "迪卡侬 UI/UX",
       "Décathlon UI/UX",
@@ -2964,6 +3084,11 @@
           "起始页",
           "Page d’accueil",
           "Home Page"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3014,6 +3139,11 @@
           "设置",
           "Paramètres",
           "Settings"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3064,6 +3194,11 @@
           "Box",
           "Box",
           "Box"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3114,6 +3249,11 @@
           "Yoga",
           "Yoga",
           "Yoga"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3166,7 +3306,11 @@
     "dir": "blender",
     "a": "purple",
     "cover": "cover.jpg",
-    "title": "Blender",
+    "title": [
+      "Blender",
+      "Blender",
+      "Blender"
+    ],
     "cn": [
       "Blender 练习",
       "Exercices Blender",
@@ -3213,7 +3357,11 @@
     "dir": "pulpe",
     "a": "orange",
     "cover": "cover.jpg",
-    "title": "Pulpe",
+    "title": [
+      "Pulpe",
+      "Pulpe",
+      "Pulpe"
+    ],
     "cn": [
       "Pulpe 杂志",
       "Magazine Pulpe",
@@ -3359,7 +3507,11 @@
     "dir": "cavalry",
     "a": "yellow",
     "cover": "cover.png",
-    "title": "Cavalry",
+    "title": [
+      "Cavalry",
+      "Cavalry",
+      "Cavalry"
+    ],
     "cn": [
       "字母练习",
       "Exercices de lettrage",
@@ -3452,7 +3604,11 @@
     "dir": "freedent",
     "a": "teal",
     "cover": "cover.png",
-    "title": "Freedent",
+    "title": [
+      "Freedent",
+      "Freedent",
+      "Freedent"
+    ],
     "cn": [
       "益达口香糖",
       "Chewing-gum Freedent",
