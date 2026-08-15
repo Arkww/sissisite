@@ -25,9 +25,10 @@
   button.ghost{border-color:var(--b);color:var(--soft)}
   button:disabled{opacity:.5;cursor:default}
   .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-  .tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+  .tri{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:16px}
   .tri .t{position:relative}
-  .tri .t span{position:absolute;top:-14px;left:2px;font-size:9px;color:var(--soft)}
+  .tri .t span{position:absolute;top:-13px;left:2px;font-size:10px;color:var(--soft)}
+  .block>div+div,.block label{margin-top:6px}
   .card{border:1.5px solid var(--b);border-radius:12px;padding:14px;margin:12px 0;background:#fff}
   .block{border:1px solid var(--b);border-radius:10px;padding:12px;margin:10px 0;background:var(--paper)}
   .imgfield{display:flex;gap:6px;align-items:center}
@@ -238,18 +239,28 @@ function ratioFit(owner){
     h("div", { style:"width:110px" }, [h("label", {}, ["最大宽度 px"]), textInput(owner,"max",{type:"number",ph:"—"})])
   ]);
 }
-function gridItemEditor(item, dir, onDel){
+function itemBar(label, ctx){
+  return h("div", { class:"row", style:"justify-content:space-between" }, [
+    h("strong",{},[label]),
+    h("div",{class:"row"},[
+      h("button",{class:"small ghost",title:"上移",onclick:ctx.onUp},["↑"]),
+      h("button",{class:"small ghost",title:"下移",onclick:ctx.onDown},["↓"]),
+      h("button",{class:"small ghost",onclick:ctx.onDel},["删除"])
+    ])
+  ]);
+}
+function gridItemEditor(item, ctx){
   return h("div", { class:"block" }, [
-    h("div", { class:"row", style:"justify-content:space-between" }, [ h("strong",{},["图片"]), h("button",{class:"small ghost",onclick:onDel},["删除"]) ]),
-    imageField(item, "src", dir, "文件"),
+    itemBar("图片", ctx),
+    imageField(item, "src", ctx.dir, "文件"),
     ratioFit(item),
     triField(item, "cap", "图注")
   ]);
 }
-function cardItemEditor(item, dir, onDel){
+function cardItemEditor(item, ctx){
   return h("div", { class:"block" }, [
-    h("div", { class:"row", style:"justify-content:space-between" }, [ h("strong",{},["卡片"]), h("button",{class:"small ghost",onclick:onDel},["删除"]) ]),
-    imageField(item, "src", dir, "图片"),
+    itemBar("卡片", ctx),
+    imageField(item, "src", ctx.dir, "图片"),
     ratioFit(item),
     triField(item, "t", "标题"),
     triField(item, "b", "文字", true),
@@ -279,8 +290,12 @@ function blockEditor(block, dir, onDel){
       body.append(h("div",{style:"width:110px"},[h("label",{},["列数"]),textInput(block,"cols",{type:"number"})]));
       const list = h("div",{class:"items"});
       block.items.forEach((it,ix)=>{
-        const ed = (block.k==="grid"?gridItemEditor:cardItemEditor)(it, dir, ()=>{ block.items.splice(ix,1); fill(); });
-        list.append(ed);
+        const ctx = { dir,
+          onDel:()=>{ block.items.splice(ix,1); fill(); },
+          onUp:()=>{ if(ix>0){ const [x]=block.items.splice(ix,1); block.items.splice(ix-1,0,x); fill(); } },
+          onDown:()=>{ if(ix<block.items.length-1){ const [x]=block.items.splice(ix,1); block.items.splice(ix+1,0,x); fill(); } }
+        };
+        list.append((block.k==="grid"?gridItemEditor:cardItemEditor)(it, ctx));
       });
       body.append(list, h("button",{class:"small",onclick:()=>{ block.items.push(block.k==="grid"?{src:"",r:"4/3",cap:["","",""]}:{src:"",r:"2/3",t:["","",""],b:["","",""]}); fill(); }},["+ 添加图片"]));
     }
