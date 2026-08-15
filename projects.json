@@ -809,6 +809,71 @@
     ]
   },
   {
+    "s": "cyberpunk",
+    "n": "04",
+    "dir": "cyberpunk",
+    "a": "pink",
+    "cover": "cover.png",
+    "featured": true,
+    "title": [
+      "Cyberpunk",
+      "Cyberpunk",
+      "Cyberpunk"
+    ],
+    "cn": [
+      "赛博朋克 · 三维动画",
+      "Cyberpunk · Animation 3D",
+      "Cyberpunk · 3D animation"
+    ],
+    "cat": [
+      "三维 · 动态影像",
+      "3D · Motion design",
+      "3D · Motion design"
+    ],
+    "lead": [
+      [
+        "这个一直在我脑海里想象出来的赛博朋克的世界，视频颜色调整，建筑透视追踪，赛博灯光动画都是我亲自调整与制作的，只想将梦里的幻象展现出来。",
+        "Un exercice de motion design 3D d'inspiration cyberpunk, explorant néons, matières et mouvement.",
+        "A cyberpunk-inspired 3D motion piece exploring neon, materials and movement."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "video",
+        "src": "motion.mp4",
+        "r": "16/9",
+        "cap": [
+          "动态影像 — 赛博朋克",
+          "Animation — Cyberpunk",
+          "Motion — Cyberpunk"
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "制作过程",
+          "Processus de création",
+          "Making-of"
+        ],
+        "b": [
+          "从视频调色渲染到每个建筑物透视的捕捉都经过多次调试而成。",
+          "De l'étalonnage et du rendu de la vidéo à la capture de la perspective de chaque bâtiment, tout a été peaufiné au fil de nombreux réglages.",
+          "From the video's colour grading and rendering to capturing each building's perspective, everything was refined over many rounds of adjustment."
+        ]
+      },
+      {
+        "k": "img",
+        "src": "1.png",
+        "r": "16/9",
+        "cap": [
+          "场景渲染",
+          "Rendu de la scène",
+          "Scene render"
+        ]
+      }
+    ]
+  },
+  {
     "s": "eclat-ete",
     "n": "05",
     "dir": "eclat-ete",
@@ -984,71 +1049,6 @@
               "Scarf pattern"
             ]
           }
-        ]
-      }
-    ]
-  },
-  {
-    "s": "cyberpunk",
-    "n": "04",
-    "dir": "cyberpunk",
-    "a": "pink",
-    "cover": "cover.png",
-    "featured": true,
-    "title": [
-      "Cyberpunk",
-      "Cyberpunk",
-      "Cyberpunk"
-    ],
-    "cn": [
-      "赛博朋克 · 三维动画",
-      "Cyberpunk · Animation 3D",
-      "Cyberpunk · 3D animation"
-    ],
-    "cat": [
-      "三维 · 动态影像",
-      "3D · Motion design",
-      "3D · Motion design"
-    ],
-    "lead": [
-      [
-        "这个一直在我脑海里想象出来的赛博朋克的世界，视频颜色调整，建筑透视追踪，赛博灯光动画都是我亲自调整与制作的，只想将梦里的幻象展现出来。",
-        "Un exercice de motion design 3D d'inspiration cyberpunk, explorant néons, matières et mouvement.",
-        "A cyberpunk-inspired 3D motion piece exploring neon, materials and movement."
-      ]
-    ],
-    "blocks": [
-      {
-        "k": "video",
-        "src": "motion.mp4",
-        "r": "16/9",
-        "cap": [
-          "动态影像 — 赛博朋克",
-          "Animation — Cyberpunk",
-          "Motion — Cyberpunk"
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "制作过程",
-          "Processus de création",
-          "Making-of"
-        ],
-        "b": [
-          "从视频调色渲染到每个建筑物透视的捕捉都经过多次调试而成。",
-          "De l'étalonnage et du rendu de la vidéo à la capture de la perspective de chaque bâtiment, tout a été peaufiné au fil de nombreux réglages.",
-          "From the video's colour grading and rendering to capturing each building's perspective, everything was refined over many rounds of adjustment."
-        ]
-      },
-      {
-        "k": "img",
-        "src": "1.png",
-        "r": "16/9",
-        "cap": [
-          "场景渲染",
-          "Rendu de la scène",
-          "Scene render"
         ]
       }
     ]
@@ -1668,6 +1668,146 @@
     ]
   },
   {
+    "s": "bobochacha",
+    "n": "10",
+    "dir": "bobochacha",
+    "a": "teal",
+    "cover": "cover.jpg",
+    "featured": true,
+    "title": [
+      "BOBOCHACHA",
+      "BOBOCHACHA",
+      "BOBOCHACHA"
+    ],
+    "cn": [
+      "餐厅品牌",
+      "Marque de restaurant",
+      "Restaurant brand"
+    ],
+    "cat": [
+      "标志与传播 · 餐厅",
+      "Logo & communication · Restaurant",
+      "Logo & communication · Restaurant"
+    ],
+    "lead": [
+      [
+        "波尔多新开业的台式 × 日式餐厅 BOBOCHACHA 的标志与传播,面向年轻客群。",
+        "Logo et communication du restaurant BOBOCHACHA — une adresse Taïwan × Japon à Bordeaux, visant une clientèle jeune.",
+        "Logo and communication for BOBOCHACHA — a Taiwan × Japan spot in Bordeaux, aimed at a young crowd."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "text",
+        "t": [
+          "标志",
+          "Le logo",
+          "The logo"
+        ],
+        "b": [
+          "三个版本,适配所有背景。",
+          "Décliné en trois versions, pour s'adapter à tous les fonds.",
+          "In three versions, to suit any background."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "src": "logo-1.jpg",
+            "r": "1/1",
+            "cap": [
+              "黑底",
+              "Fond noir",
+              "Black ground"
+            ]
+          },
+          {
+            "src": "logo-2.jpg",
+            "r": "1/1",
+            "cap": [
+              "白底",
+              "Fond blanc",
+              "White ground"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "logo-3.jpg",
+            "r": "1/1",
+            "cap": [
+              "蓝绿底",
+              "Fond sarcelle",
+              "Teal ground"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "传单与海报",
+          "Flyers & affiches",
+          "Flyers & posters"
+        ],
+        "b": [
+          "餐厅的受众群体主要是年轻女性，所以传单与海报的风格也就更活跃趣味些。",
+          "Des supports aux couleurs vives et dynamiques, à l'image du lieu.",
+          "Bright, energetic materials that mirror the venue."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "print-1.jpg",
+            "r": "7/5",
+            "cap": [
+              "传单 — 菜单",
+              "Flyer — menu",
+              "Flyer — menu"
+            ]
+          },
+          {
+            "src": "print-2.jpg",
+            "r": "7/5",
+            "cap": [
+              "促销 — Taï Taï 套餐",
+              "Flyer promo — Taï Taï Combo",
+              "Promo — Taï Taï Combo"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "print-3.jpg",
+            "r": "2/3",
+            "cap": [
+              "传单 — 菜单",
+              "Flyer — menu",
+              "Flyer — menu"
+            ]
+          },
+          {
+            "src": "1.jpg",
+            "r": "2/3",
+            "cap": [
+              "促销 — Taï Taï 套餐",
+              "Flyer promo — Taï Taï Combo",
+              "Promo — Taï Taï Combo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "s": "photographie",
     "n": "11",
     "dir": "photographie",
@@ -2029,110 +2169,6 @@
     ]
   },
   {
-    "s": "lush",
-    "n": "14",
-    "dir": "lush",
-    "a": "green",
-    "cover": "cover.jpg",
-    "title": [
-      "LUSH × Halloween",
-      "LUSH × Halloween",
-      "LUSH × Halloween"
-    ],
-    "cn": [
-      "LUSH 万圣节",
-      "LUSH Halloween",
-      "LUSH Halloween"
-    ],
-    "cat": [
-      "活动传播 · 海报",
-      "Campagne · Affiches",
-      "Campaign · Posters"
-    ],
-    "lead": [
-      [
-        "LUSH 是英国手工洗护品牌，以手工香皂、浴球等产品而闻名，强调新鲜原料、创意设计与环保理念。我参与了万圣节限定浴球礼盒的广告拍摄，负责产品视觉呈现及摄影工作。",
-        "LUSH est une marque britannique de produits de soin artisanaux, connue notamment pour ses savons faits main et ses bombes de bain. La marque met l’accent sur l’utilisation d’ingrédients frais, le design créatif et une démarche respectueuse de l’environnement. J’ai participé à la réalisation de la campagne publicitaire pour une collection de coffrets de bombes de bain édition spéciale Halloween, en prenant en charge la mise en valeur visuelle des produits et la photographie.",
-        "LUSH is a British brand of handmade bath and body products, best known for its handmade soaps and bath bombs. The brand focuses on fresh ingredients, creative design, and environmental responsibility. I participated in the advertising campaign for a special Halloween collection of bath bomb gift sets, taking charge of the products’ visual presentation and photography."
-      ]
-    ],
-    "blocks": [
-      {
-        "k": "video",
-        "src": "LUSH_VIDEO.mp4",
-        "r": "1/2",
-        "cap": [
-          "动态影像 — LUSH 万圣节",
-          "Motion — LUSH Halloween",
-          "Motion — LUSH Halloween"
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "产品摄影&海报",
-          "Photographie de produit & Affiche",
-          "Product Photography & Poster"
-        ],
-        "b": [
-          "我首先针对主打产品进行摄影，通过构图与光线突出产品特点，再从中筛选合适的照片进行海报设计，用于品牌宣传。",
-          "Je réalise d’abord des photographies des produits phares, puis je sélectionne les images adaptées pour créer des affiches promotionnelles.",
-          "I first photograph the key products, then select the best images to create promotional posters."
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "1.jpg",
-            "r": "3/4",
-            "cap": [
-              "A3 海报 — 1",
-              "Affiche A3 — 1",
-              "A3 poster — 1"
-            ]
-          },
-          {
-            "src": "2.jpg",
-            "r": "3/4",
-            "cap": [
-              "A3 海报 — 2",
-              "Affiche A3 — 2",
-              "A3 poster — 2"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "3.png",
-            "r": "1/1",
-            "cap": [
-              "视觉物料",
-              "Visuel",
-              "Visual"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "4.png",
-            "r": "1/1",
-            "cap": [
-              "视觉物料",
-              "Visuel",
-              "Visual"
-            ],
-            "fit": "contain"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "s": "nihon-buyo",
     "n": "13",
     "dir": "nihon-buyo",
@@ -2397,45 +2433,55 @@
     ]
   },
   {
-    "s": "庄周梦蝶",
-    "n": "26",
-    "dir": "庄周梦蝶",
+    "s": "lush",
+    "n": "14",
+    "dir": "lush",
     "a": "green",
     "cover": "cover.jpg",
     "title": [
-      "庄周梦蝶",
-      "Le rêve du papillon",
-      "The Butterfly Dream"
+      "LUSH × Halloween",
+      "LUSH × Halloween",
+      "LUSH × Halloween"
     ],
     "cn": [
-      "人生如梦，梦亦如人生；不必执着于真假与得失，顺应变化，保持自由",
-      "La vie est un rêve, et le rêve est une vie. Ne pas s’attacher au vrai ou au faux, aux gains ou aux pertes, mais accueillir le changement et rester libre.",
-      "Life is a dream, and dreams are life. Let go of truth and illusion, gain and loss; embrace change and remain free."
+      "LUSH 万圣节",
+      "LUSH Halloween",
+      "LUSH Halloween"
     ],
     "cat": [
-      "五行 · 唯心主义",
-      "Philosophie idéaliste",
-      "Idealist Philosophy"
+      "活动传播 · 海报",
+      "Campagne · Affiches",
+      "Campaign · Posters"
     ],
     "lead": [
       [
-        "这幅作品源于我对庄周梦蝶故事的思考，并将其与道家五行哲学相结合进行创作。金、木、水、火、土五种元素分别具有独特的自然属性与象征意义，我以此为灵感，为每一种元素设计了专属的视觉语言与蝴蝶形象。通过五种元素与蝴蝶的结合，我希望探索自然、变化与生命之间的关系，以及“真实与虚幻”之间模糊而自由的边界。",
-        "Cette série est née de ma réflexion autour du Rêve du papillon de Zhuangzi, que j’ai associé à la philosophie taoïste des Cinq Éléments. Le métal, le bois, l’eau, le feu et la terre possèdent chacun leurs propres caractéristiques et symboliques. Je leur ai ainsi attribué une identité visuelle et un papillon uniques, afin d’explorer les notions de transformation, d’équilibre et d’interconnexion entre l’être humain et la nature.",
-        "This series is inspired by my reflection on Zhuangzi’s Dream of the Butterfly, combined with the Taoist philosophy of the Five Elements. Metal, Wood, Water, Fire, and Earth each possess their own distinctive qualities and symbolism. I created a unique visual identity and butterfly for each element, exploring the ideas of transformation, balance, and the interconnectedness between human beings and nature."
+        "LUSH 是英国手工洗护品牌，以手工香皂、浴球等产品而闻名，强调新鲜原料、创意设计与环保理念。我参与了万圣节限定浴球礼盒的广告拍摄，负责产品视觉呈现及摄影工作。",
+        "LUSH est une marque britannique de produits de soin artisanaux, connue notamment pour ses savons faits main et ses bombes de bain. La marque met l’accent sur l’utilisation d’ingrédients frais, le design créatif et une démarche respectueuse de l’environnement. J’ai participé à la réalisation de la campagne publicitaire pour une collection de coffrets de bombes de bain édition spéciale Halloween, en prenant en charge la mise en valeur visuelle des produits et la photographie.",
+        "LUSH is a British brand of handmade bath and body products, best known for its handmade soaps and bath bombs. The brand focuses on fresh ingredients, creative design, and environmental responsibility. I participated in the advertising campaign for a special Halloween collection of bath bomb gift sets, taking charge of the products’ visual presentation and photography."
       ]
     ],
     "blocks": [
       {
+        "k": "video",
+        "src": "LUSH_VIDEO.mp4",
+        "r": "1/2",
+        "cap": [
+          "动态影像 — LUSH 万圣节",
+          "Motion — LUSH Halloween",
+          "Motion — LUSH Halloween"
+        ]
+      },
+      {
         "k": "text",
         "t": [
-          "金",
-          "Métal",
-          "Metal"
+          "产品摄影&海报",
+          "Photographie de produit & Affiche",
+          "Product Photography & Poster"
         ],
         "b": [
-          "",
-          "",
-          ""
+          "我首先针对主打产品进行摄影，通过构图与光线突出产品特点，再从中筛选合适的照片进行海报设计，用于品牌宣传。",
+          "Je réalise d’abord des photographies des produits phares, puis je sélectionne les images adaptées pour créer des affiches promotionnelles.",
+          "I first photograph the key products, then select the best images to create promotional posters."
         ]
       },
       {
@@ -2444,35 +2490,22 @@
         "items": [
           {
             "src": "1.jpg",
-            "r": "4/3",
+            "r": "3/4",
             "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
+              "A3 海报 — 1",
+              "Affiche A3 — 1",
+              "A3 poster — 1"
             ]
           },
           {
             "src": "2.jpg",
-            "r": "4/3",
+            "r": "3/4",
             "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
+              "A3 海报 — 2",
+              "Affiche A3 — 2",
+              "A3 poster — 2"
             ]
           }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "木",
-          "Bois",
-          "Wood"
-        ],
-        "b": [
-          "",
-          "",
-          ""
         ]
       },
       {
@@ -2480,203 +2513,22 @@
         "cols": 2,
         "items": [
           {
-            "src": "3.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "4.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "水",
-          "Eau",
-          "Water"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "5.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "6.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "火",
-          "Feu",
-          "fire"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "7.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "8.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "土",
-          "Terre",
-          "Earth"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "9.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "10.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "文创产品",
-          "Créations culturelles",
-          "Cultural Creations"
-        ],
-        "b": [
-          "我认为，创作不应该只停留在画作本身，也可以通过文创产品等形式进行延伸，让作品进入生活。这样不仅能丰富作品的表现形式，也能赋予它更多的价值和意义。",
-          "Je pense qu’une création ne devrait pas se limiter à une œuvre d’art. Elle peut également être prolongée à travers des produits dérivés ou des objets créatifs, afin de faire entrer l’œuvre dans la vie quotidienne. Cela permet non seulement d’enrichir ses formes d’expression, mais aussi de lui donner davantage de valeur et de sens.",
-          "I believe that a creation should not be limited to the artwork itself. It can also be extended through creative products and related merchandise, allowing the work to become part of everyday life. This not only enriches its forms of expression, but also gives it greater value and meaning."
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 3,
-        "items": [
-          {
-            "src": "11.jpg",
+            "src": "3.png",
             "r": "1/1",
             "cap": [
-              "黑底",
-              "Fond noir",
-              "Black ground"
-            ]
-          },
-          {
-            "src": "12.jpg",
-            "r": "1/1",
-            "cap": [
-              "白底",
-              "Fond blanc",
-              "White ground"
+              "视觉物料",
+              "Visuel",
+              "Visual"
             ],
             "fit": "contain"
           },
           {
-            "src": "13.jpg",
+            "src": "4.png",
             "r": "1/1",
             "cap": [
-              "蓝绿底",
-              "Fond sarcelle",
-              "Teal ground"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "14.jpg",
-            "r": "5/3",
-            "cap": [
-              "黑底",
-              "Fond noir",
-              "Black ground"
-            ]
-          },
-          {
-            "src": "15.jpg",
-            "r": "5/3",
-            "cap": [
-              "白底",
-              "Fond blanc",
-              "White ground"
+              "视觉物料",
+              "Visuel",
+              "Visual"
             ],
             "fit": "contain"
           }
@@ -2685,325 +2537,125 @@
     ]
   },
   {
-    "s": "bobochacha",
-    "n": "10",
-    "dir": "bobochacha",
+    "s": "freedent",
+    "n": "15",
+    "dir": "freedent",
     "a": "teal",
-    "cover": "cover.jpg",
-    "featured": true,
+    "cover": "cover.png",
     "title": [
-      "BOBOCHACHA",
-      "BOBOCHACHA",
-      "BOBOCHACHA"
+      "Freedent",
+      "Freedent",
+      "Freedent"
     ],
     "cn": [
-      "餐厅品牌",
-      "Marque de restaurant",
-      "Restaurant brand"
+      "益达口香糖",
+      "Chewing-gum Freedent",
+      "Freedent chewing gum"
     ],
     "cat": [
-      "标志与传播 · 餐厅",
-      "Logo & communication · Restaurant",
-      "Logo & communication · Restaurant"
+      "包装设计 · 口香糖",
+      "Packaging · Chewing-gum",
+      "Packaging · Chewing gum"
     ],
     "lead": [
       [
-        "波尔多新开业的台式 × 日式餐厅 BOBOCHACHA 的标志与传播,面向年轻客群。",
-        "Logo et communication du restaurant BOBOCHACHA — une adresse Taïwan × Japon à Bordeaux, visant une clientèle jeune.",
-        "Logo and communication for BOBOCHACHA — a Taiwan × Japan spot in Bordeaux, aimed at a young crowd."
+        "我为freedent做了全新的品牌升级和包装设计。",
+        "Un exercice de packaging pour les chewing-gums Freedent, avec une identité couleur forte par parfum.",
+        "A packaging exercise for Freedent gum, with a strong colour identity per flavour."
       ]
     ],
     "blocks": [
-      {
-        "k": "text",
-        "t": [
-          "标志",
-          "Le logo",
-          "The logo"
-        ],
-        "b": [
-          "三个版本,适配所有背景。",
-          "Décliné en trois versions, pour s'adapter à tous les fonds.",
-          "In three versions, to suit any background."
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 3,
-        "items": [
-          {
-            "src": "logo-1.jpg",
-            "r": "1/1",
-            "cap": [
-              "黑底",
-              "Fond noir",
-              "Black ground"
-            ]
-          },
-          {
-            "src": "logo-2.jpg",
-            "r": "1/1",
-            "cap": [
-              "白底",
-              "Fond blanc",
-              "White ground"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "logo-3.jpg",
-            "r": "1/1",
-            "cap": [
-              "蓝绿底",
-              "Fond sarcelle",
-              "Teal ground"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "传单与海报",
-          "Flyers & affiches",
-          "Flyers & posters"
-        ],
-        "b": [
-          "餐厅的受众群体主要是年轻女性，所以传单与海报的风格也就更活跃趣味些。",
-          "Des supports aux couleurs vives et dynamiques, à l'image du lieu.",
-          "Bright, energetic materials that mirror the venue."
-        ]
-      },
       {
         "k": "grid",
         "cols": 2,
         "items": [
           {
-            "src": "print-1.jpg",
-            "r": "7/5",
+            "src": "1.jpg",
+            "r": "5/3",
             "cap": [
-              "传单 — 菜单",
-              "Flyer — menu",
-              "Flyer — menu"
+              "排版 — 3",
+              "Mise en page — 3",
+              "Layout — 3"
             ]
           },
-          {
-            "src": "print-2.jpg",
-            "r": "7/5",
-            "cap": [
-              "促销 — Taï Taï 套餐",
-              "Flyer promo — Taï Taï Combo",
-              "Promo — Taï Taï Combo"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "print-3.jpg",
-            "r": "2/3",
-            "cap": [
-              "传单 — 菜单",
-              "Flyer — menu",
-              "Flyer — menu"
-            ]
-          },
-          {
-            "src": "1.jpg",
-            "r": "2/3",
-            "cap": [
-              "促销 — Taï Taï 套餐",
-              "Flyer promo — Taï Taï Combo",
-              "Promo — Taï Taï Combo"
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "s": "sonoa-nuxe",
-    "n": "20",
-    "dir": "sonoa-nuxe",
-    "a": "pink",
-    "cover": "cover.jpg",
-    "title": [
-      "SONOA × NUXE",
-      "SONOA × NUXE",
-      "SONOA × NUXE"
-    ],
-    "cn": [
-      "娇韵诗 × 音乐",
-      "Marque beauté × musique",
-      "Beauty brand × music"
-    ],
-    "cat": [
-      "品牌策略 · 网页",
-      "Stratégie de marque · Web",
-      "Brand strategy · Web"
-    ],
-    "lead": [
-      [
-        "为 NUXE 构思的品牌与数字项目,结合音乐感官，制作出符合NUXE特质的产品，并为本产品设计出匹配风格的网页宣传与邮箱推广设计。",
-        "Un projet de marque et digital pour NUXE, mêlé à une expérience musicale : positionnement, moodboard, produit et web.",
-        "A brand and digital project for NUXE, tied to a music experience: positioning, moodboard, product and web."
-      ],
-      [
-        "访问我的设计：https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0，此链接包括所有设计构思，草图及成品。",
-        "Voir mes designs : https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — ce lien réunit toutes les intentions, croquis et réalisations.",
-        "View my designs: https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — it gathers all the concepts, sketches and final work."
-      ]
-    ],
-    "blocks": [
-      {
-        "k": "text",
-        "t": [
-          "网页",
-          "Site Web",
-          "Web Page"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 1,
-        "items": [
-          {
-            "src": "1.jpg",
-            "r": "16/9",
-            "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "邮件",
-          "E-mail",
-          "E-mail"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 1,
-        "items": [
           {
             "src": "2.jpg",
-            "r": "16/9",
+            "r": "5/3",
             "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
+              "封面",
+              "Couverture",
+              "Cover"
             ]
           }
         ]
       },
       {
-        "k": "text",
-        "t": [
-          "品牌定位",
-          "Positionnement de marque",
-          "Brand Positioning"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
         "k": "grid",
-        "cols": 1,
+        "cols": 2,
         "items": [
           {
             "src": "3.jpg",
-            "r": "16/9",
+            "r": "5/3",
             "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "Moodboard",
-          "Moodboard",
-          "Moodboard"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "5.jpg",
-            "r": "16/9",
-            "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
+              "排版 — 3",
+              "Mise en page — 3",
+              "Layout — 3"
             ]
           },
           {
             "src": "4.jpg",
-            "r": "16/9",
+            "r": "5/3",
             "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
+              "封面",
+              "Couverture",
+              "Cover"
             ]
           }
         ]
       },
       {
-        "k": "text",
-        "t": [
-          "产品设计",
-          "Design produit",
-          "Product Design"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
         "k": "grid",
-        "cols": 1,
+        "cols": 4,
         "items": [
           {
-            "src": "6.jpg",
-            "r": "16/9",
+            "src": "fraise.png",
+            "r": "5/8",
             "cap": [
-              "情绪板",
-              "Moodboard",
-              "Moodboard"
-            ]
+              "薄荷原味",
+              "Menthe nature",
+              "Mint original"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "mint.png",
+            "r": "5/8",
+            "cap": [
+              "强劲薄荷",
+              "Menthe forte",
+              "Strong mint"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "strawberry.png",
+            "r": "5/8",
+            "cap": [
+              "草莓味",
+              "Fraise",
+              "Strawberry"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "blueberry.png",
+            "r": "5/8",
+            "cap": [
+              "蓝莓味",
+              "Myrtille",
+              "Blueberry"
+            ],
+            "fit": "contain"
           }
         ]
       }
@@ -3352,61 +3004,106 @@
     ]
   },
   {
-    "s": "pulpe",
-    "n": "24",
-    "dir": "pulpe",
-    "a": "orange",
+    "s": "sonoa-nuxe",
+    "n": "20",
+    "dir": "sonoa-nuxe",
+    "a": "pink",
     "cover": "cover.jpg",
     "title": [
-      "Pulpe",
-      "Pulpe",
-      "Pulpe"
+      "SONOA × NUXE",
+      "SONOA × NUXE",
+      "SONOA × NUXE"
     ],
     "cn": [
-      "Pulpe 杂志",
-      "Magazine Pulpe",
-      "Pulpe magazine"
+      "娇韵诗 × 音乐",
+      "Marque beauté × musique",
+      "Beauty brand × music"
     ],
     "cat": [
-      "编辑设计 · 杂志",
-      "Design éditorial · Magazine",
-      "Editorial design · Magazine"
+      "品牌策略 · 网页",
+      "Stratégie de marque · Web",
+      "Brand strategy · Web"
     ],
     "lead": [
       [
-        "「Pulpe」是一本以波尔多葡萄酒文化为主题的杂志，以年轻、现代的视角探索葡萄酒与生活方式。本次甲方需要朋友在一起轻松愉悦的封面。",
-        "Design éditorial et mise en page du magazine « Pulpe » — grille, hiérarchie typographique et rythme texte-image.",
-        "Editorial and layout design of “Pulpe” magazine — grid, type hierarchy and text-image rhythm."
+        "为 NUXE 构思的品牌与数字项目,结合音乐感官，制作出符合NUXE特质的产品，并为本产品设计出匹配风格的网页宣传与邮箱推广设计。",
+        "Un projet de marque et digital pour NUXE, mêlé à une expérience musicale : positionnement, moodboard, produit et web.",
+        "A brand and digital project for NUXE, tied to a music experience: positioning, moodboard, product and web."
       ],
       [
-        "本次甲方需要朋友在一起轻松愉悦的封面，我还为部分内容进行了设计排版。",
-        "Le client souhaitait une couverture évoquant un moment convivial et joyeux entre amis. J’ai également réalisé la mise en page de certains contenus du magazine.",
-        "The client wanted a cover that conveyed a relaxed and joyful moment shared among friends. I also designed the layout for some of the magazine’s content."
+        "访问我的设计：https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0，此链接包括所有设计构思，草图及成品。",
+        "Voir mes designs : https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — ce lien réunit toutes les intentions, croquis et réalisations.",
+        "View my designs: https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — it gathers all the concepts, sketches and final work."
       ]
     ],
     "blocks": [
       {
+        "k": "text",
+        "t": [
+          "网页",
+          "Site Web",
+          "Web Page"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
         "k": "grid",
-        "cols": 2,
+        "cols": 1,
         "items": [
           {
-            "src": "cover.jpg",
-            "r": "3/4",
+            "src": "1.jpg",
+            "r": "16/9",
             "cap": [
-              "排版 — 1",
-              "Mise en page — 1",
-              "Layout — 1"
-            ]
-          },
-          {
-            "src": "2.jpg",
-            "r": "3/4",
-            "cap": [
-              "排版 — 2",
-              "Mise en page — 2",
-              "Layout — 2"
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
             ]
           }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "邮件",
+          "E-mail",
+          "E-mail"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
+          {
+            "src": "2.jpg",
+            "r": "16/9",
+            "cap": [
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "品牌定位",
+          "Positionnement de marque",
+          "Brand Positioning"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3415,29 +3112,76 @@
         "items": [
           {
             "src": "3.jpg",
-            "r": "3/2",
+            "r": "16/9",
             "cap": [
-              "排版 — 3",
-              "Mise en page — 3",
-              "Layout — 3"
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "Moodboard",
+          "Moodboard",
+          "Moodboard"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "5.jpg",
+            "r": "16/9",
+            "cap": [
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
             ]
           },
           {
             "src": "4.jpg",
-            "r": "5/3",
+            "r": "16/9",
             "cap": [
-              "封面",
-              "Couverture",
-              "Cover"
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "产品设计",
+          "Design produit",
+          "Product Design"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
           {
-            "src": "5.jpg",
-            "r": "15/10",
+            "src": "6.jpg",
+            "r": "16/9",
             "cap": [
-              "封面",
-              "Couverture",
-              "Cover"
+              "情绪板",
+              "Moodboard",
+              "Moodboard"
             ]
           }
         ]
@@ -3599,131 +3343,6 @@
     ]
   },
   {
-    "s": "freedent",
-    "n": "15",
-    "dir": "freedent",
-    "a": "teal",
-    "cover": "cover.png",
-    "title": [
-      "Freedent",
-      "Freedent",
-      "Freedent"
-    ],
-    "cn": [
-      "益达口香糖",
-      "Chewing-gum Freedent",
-      "Freedent chewing gum"
-    ],
-    "cat": [
-      "包装设计 · 口香糖",
-      "Packaging · Chewing-gum",
-      "Packaging · Chewing gum"
-    ],
-    "lead": [
-      [
-        "我为freedent做了全新的品牌升级和包装设计。",
-        "Un exercice de packaging pour les chewing-gums Freedent, avec une identité couleur forte par parfum.",
-        "A packaging exercise for Freedent gum, with a strong colour identity per flavour."
-      ]
-    ],
-    "blocks": [
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "1.jpg",
-            "r": "5/3",
-            "cap": [
-              "排版 — 3",
-              "Mise en page — 3",
-              "Layout — 3"
-            ]
-          },
-          {
-            "src": "2.jpg",
-            "r": "5/3",
-            "cap": [
-              "封面",
-              "Couverture",
-              "Cover"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "3.jpg",
-            "r": "5/3",
-            "cap": [
-              "排版 — 3",
-              "Mise en page — 3",
-              "Layout — 3"
-            ]
-          },
-          {
-            "src": "4.jpg",
-            "r": "5/3",
-            "cap": [
-              "封面",
-              "Couverture",
-              "Cover"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 4,
-        "items": [
-          {
-            "src": "fraise.png",
-            "r": "5/8",
-            "cap": [
-              "薄荷原味",
-              "Menthe nature",
-              "Mint original"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "mint.png",
-            "r": "5/8",
-            "cap": [
-              "强劲薄荷",
-              "Menthe forte",
-              "Strong mint"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "strawberry.png",
-            "r": "5/8",
-            "cap": [
-              "草莓味",
-              "Fraise",
-              "Strawberry"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "blueberry.png",
-            "r": "5/8",
-            "cap": [
-              "蓝莓味",
-              "Myrtille",
-              "Blueberry"
-            ],
-            "fit": "contain"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "s": "comic-web",
     "n": "23",
     "dir": "comic-web",
@@ -3759,6 +3378,416 @@
           "完整方案 — PDF",
           "Présentation complète — PDF",
           "Full presentation — PDF"
+        ]
+      }
+    ]
+  },
+  {
+    "s": "pulpe",
+    "n": "24",
+    "dir": "pulpe",
+    "a": "orange",
+    "cover": "cover.jpg",
+    "title": [
+      "Pulpe",
+      "Pulpe",
+      "Pulpe"
+    ],
+    "cn": [
+      "Pulpe 杂志",
+      "Magazine Pulpe",
+      "Pulpe magazine"
+    ],
+    "cat": [
+      "编辑设计 · 杂志",
+      "Design éditorial · Magazine",
+      "Editorial design · Magazine"
+    ],
+    "lead": [
+      [
+        "「Pulpe」是一本以波尔多葡萄酒文化为主题的杂志，以年轻、现代的视角探索葡萄酒与生活方式。本次甲方需要朋友在一起轻松愉悦的封面。",
+        "Design éditorial et mise en page du magazine « Pulpe » — grille, hiérarchie typographique et rythme texte-image.",
+        "Editorial and layout design of “Pulpe” magazine — grid, type hierarchy and text-image rhythm."
+      ],
+      [
+        "本次甲方需要朋友在一起轻松愉悦的封面，我还为部分内容进行了设计排版。",
+        "Le client souhaitait une couverture évoquant un moment convivial et joyeux entre amis. J’ai également réalisé la mise en page de certains contenus du magazine.",
+        "The client wanted a cover that conveyed a relaxed and joyful moment shared among friends. I also designed the layout for some of the magazine’s content."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "cover.jpg",
+            "r": "3/4",
+            "cap": [
+              "排版 — 1",
+              "Mise en page — 1",
+              "Layout — 1"
+            ]
+          },
+          {
+            "src": "2.jpg",
+            "r": "3/4",
+            "cap": [
+              "排版 — 2",
+              "Mise en page — 2",
+              "Layout — 2"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
+          {
+            "src": "3.jpg",
+            "r": "3/2",
+            "cap": [
+              "排版 — 3",
+              "Mise en page — 3",
+              "Layout — 3"
+            ]
+          },
+          {
+            "src": "4.jpg",
+            "r": "5/3",
+            "cap": [
+              "封面",
+              "Couverture",
+              "Cover"
+            ]
+          },
+          {
+            "src": "5.jpg",
+            "r": "15/10",
+            "cap": [
+              "封面",
+              "Couverture",
+              "Cover"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "s": "new-project",
+    "n": "25",
+    "dir": "new-project",
+    "cover": "cover.jpg",
+    "title": [
+      "",
+      "",
+      ""
+    ],
+    "cn": [
+      "",
+      "",
+      ""
+    ],
+    "cat": [
+      "",
+      "",
+      ""
+    ],
+    "lead": [
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "blocks": []
+  },
+  {
+    "s": "庄周梦蝶",
+    "n": "26",
+    "dir": "庄周梦蝶",
+    "a": "green",
+    "cover": "cover.jpg",
+    "title": [
+      "庄周梦蝶",
+      "Le rêve du papillon",
+      "The Butterfly Dream"
+    ],
+    "cn": [
+      "人生如梦，梦亦如人生；不必执着于真假与得失，顺应变化，保持自由",
+      "La vie est un rêve, et le rêve est une vie. Ne pas s’attacher au vrai ou au faux, aux gains ou aux pertes, mais accueillir le changement et rester libre.",
+      "Life is a dream, and dreams are life. Let go of truth and illusion, gain and loss; embrace change and remain free."
+    ],
+    "cat": [
+      "五行 · 唯心主义",
+      "Philosophie idéaliste",
+      "Idealist Philosophy"
+    ],
+    "lead": [
+      [
+        "这幅作品源于我对庄周梦蝶故事的思考，并将其与道家五行哲学相结合进行创作。金、木、水、火、土五种元素分别具有独特的自然属性与象征意义，我以此为灵感，为每一种元素设计了专属的视觉语言与蝴蝶形象。通过五种元素与蝴蝶的结合，我希望探索自然、变化与生命之间的关系，以及“真实与虚幻”之间模糊而自由的边界。",
+        "Cette série est née de ma réflexion autour du Rêve du papillon de Zhuangzi, que j’ai associé à la philosophie taoïste des Cinq Éléments. Le métal, le bois, l’eau, le feu et la terre possèdent chacun leurs propres caractéristiques et symboliques. Je leur ai ainsi attribué une identité visuelle et un papillon uniques, afin d’explorer les notions de transformation, d’équilibre et d’interconnexion entre l’être humain et la nature.",
+        "This series is inspired by my reflection on Zhuangzi’s Dream of the Butterfly, combined with the Taoist philosophy of the Five Elements. Metal, Wood, Water, Fire, and Earth each possess their own distinctive qualities and symbolism. I created a unique visual identity and butterfly for each element, exploring the ideas of transformation, balance, and the interconnectedness between human beings and nature."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "text",
+        "t": [
+          "金",
+          "Métal",
+          "Metal"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "1.jpg",
+            "r": "4/3",
+            "cap": [
+              "草原",
+              "Steppe",
+              "Steppe"
+            ]
+          },
+          {
+            "src": "2.jpg",
+            "r": "4/3",
+            "cap": [
+              "旅途",
+              "Voyage",
+              "Journey"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "木",
+          "Bois",
+          "Wood"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "3.jpg",
+            "r": "4/3",
+            "cap": [
+              "草原",
+              "Steppe",
+              "Steppe"
+            ]
+          },
+          {
+            "src": "4.jpg",
+            "r": "4/3",
+            "cap": [
+              "旅途",
+              "Voyage",
+              "Journey"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "水",
+          "Eau",
+          "Water"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "5.jpg",
+            "r": "4/3",
+            "cap": [
+              "草原",
+              "Steppe",
+              "Steppe"
+            ]
+          },
+          {
+            "src": "6.jpg",
+            "r": "4/3",
+            "cap": [
+              "旅途",
+              "Voyage",
+              "Journey"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "火",
+          "Feu",
+          "fire"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "7.jpg",
+            "r": "4/3",
+            "cap": [
+              "草原",
+              "Steppe",
+              "Steppe"
+            ]
+          },
+          {
+            "src": "8.jpg",
+            "r": "4/3",
+            "cap": [
+              "旅途",
+              "Voyage",
+              "Journey"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "土",
+          "Terre",
+          "Earth"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "9.jpg",
+            "r": "4/3",
+            "cap": [
+              "草原",
+              "Steppe",
+              "Steppe"
+            ]
+          },
+          {
+            "src": "10.jpg",
+            "r": "4/3",
+            "cap": [
+              "旅途",
+              "Voyage",
+              "Journey"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "文创产品",
+          "Créations culturelles",
+          "Cultural Creations"
+        ],
+        "b": [
+          "我认为，创作不应该只停留在画作本身，也可以通过文创产品等形式进行延伸，让作品进入生活。这样不仅能丰富作品的表现形式，也能赋予它更多的价值和意义。",
+          "Je pense qu’une création ne devrait pas se limiter à une œuvre d’art. Elle peut également être prolongée à travers des produits dérivés ou des objets créatifs, afin de faire entrer l’œuvre dans la vie quotidienne. Cela permet non seulement d’enrichir ses formes d’expression, mais aussi de lui donner davantage de valeur et de sens.",
+          "I believe that a creation should not be limited to the artwork itself. It can also be extended through creative products and related merchandise, allowing the work to become part of everyday life. This not only enriches its forms of expression, but also gives it greater value and meaning."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 3,
+        "items": [
+          {
+            "src": "11.jpg",
+            "r": "1/1",
+            "cap": [
+              "黑底",
+              "Fond noir",
+              "Black ground"
+            ]
+          },
+          {
+            "src": "12.jpg",
+            "r": "1/1",
+            "cap": [
+              "白底",
+              "Fond blanc",
+              "White ground"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "13.jpg",
+            "r": "1/1",
+            "cap": [
+              "蓝绿底",
+              "Fond sarcelle",
+              "Teal ground"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "14.jpg",
+            "r": "5/3",
+            "cap": [
+              "黑底",
+              "Fond noir",
+              "Black ground"
+            ]
+          },
+          {
+            "src": "15.jpg",
+            "r": "5/3",
+            "cap": [
+              "白底",
+              "Fond blanc",
+              "White ground"
+            ],
+            "fit": "contain"
+          }
         ]
       }
     ]
