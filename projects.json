@@ -175,6 +175,19 @@
             "Manual cover"
           ]
         }
+      },
+      {
+        "k": "text",
+        "t": [
+          "test",
+          "test",
+          "test"
+        ],
+        "b": [
+          "test",
+          "test",
+          "test"
+        ]
       }
     ]
   },
@@ -1060,7 +1073,11 @@
     "a": "pink",
     "cover": "cover.png",
     "featured": true,
-    "title": "Cyberpunk",
+    "title": [
+      "Cyberpunk",
+      "Cyberpunk",
+      "Cyberpunk"
+    ],
     "cn": [
       "赛博朋克 · 三维动画",
       "Cyberpunk · Animation 3D",
@@ -2235,7 +2252,11 @@
     "dir": "lush",
     "a": "green",
     "cover": "cover.jpg",
-    "title": "LUSH × Halloween",
+    "title": [
+      "LUSH × Halloween",
+      "LUSH × Halloween",
+      "LUSH × Halloween"
+    ],
     "cn": [
       "LUSH 万圣节",
       "LUSH Halloween",
@@ -2807,7 +2828,11 @@
     "dir": "sonoa-nuxe",
     "a": "pink",
     "cover": "cover.jpg",
-    "title": "SONOA × NUXE",
+    "title": [
+      "SONOA × NUXE",
+      "SONOA × NUXE",
+      "SONOA × NUXE"
+    ],
     "cn": [
       "娇韵诗 × 音乐",
       "Marque beauté × musique",
@@ -2837,6 +2862,11 @@
           "网页",
           "Site Web",
           "Web Page"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -3680,35 +3710,6 @@
         ]
       }
     ]
-  },
-  {
-    "s": "new-project",
-    "n": "25",
-    "dir": "new-project",
-    "cover": "cover.jpg",
-    "title": [
-      "",
-      "",
-      ""
-    ],
-    "cn": [
-      "",
-      "",
-      ""
-    ],
-    "cat": [
-      "",
-      "",
-      ""
-    ],
-    "lead": [
-      [
-        "",
-        "",
-        ""
-      ]
-    ],
-    "blocks": []
   },
   {
     "s": "庄周梦蝶",
