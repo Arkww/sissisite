@@ -1920,15 +1920,15 @@
     ],
     "lead": [
       [
-        "个人绘画作品,我从5岁开始学习画画，会国画/水粉画/素描/速写/流体画等等，以下是我近期的一些作品。",
-        "Travaux de peinture personnels — un espace libre où j'explore la couleur, la composition et la matière.",
-        "Personal paintings — a free space where I explore colour, composition and texture."
+        "个人绘画作品,我从5岁开始学习画画，会国画/水粉画/素描/速写/流体画等等。",
+        "Travaux personnels en peinture\nJe pratique le dessin et la peinture depuis l’âge de 5 ans. Je maîtrise notamment la peinture chinoise, la gouache, le dessin académique, le croquis et la peinture fluide.",
+        "Personal Artworks\nI have been practicing drawing and painting since the age of five. My skills include Chinese painting, gouache, academic drawing, sketching, and fluid art."
       ]
     ],
     "blocks": [
       {
         "k": "grid",
-        "cols": 1,
+        "cols": 2,
         "items": [
           {
             "src": "p-1.jpg",
@@ -1938,20 +1938,29 @@
               "Œuvre",
               "Work"
             ]
+          },
+          {
+            "src": "1.JPG",
+            "r": "4/3",
+            "cap": [
+              "",
+              "",
+              ""
+            ]
           }
         ]
       },
       {
         "k": "text",
         "t": [
-          "社媒推广",
-          "Promotion sociale",
-          "Social promotion"
+          "国画",
+          "Peinture chinoise",
+          "Chinese Painting"
         ],
         "b": [
-          "一系列与应用风格一致的推广内容。",
-          "Une série de publications cohérentes avec le style de l'app.",
-          "A set of posts consistent with the app's style."
+          "工作之余经常画国画，还会定期给法国小朋友进行国画兴趣辅导",
+          "En dehors de mon travail, je pratique régulièrement la peinture chinoise et j’anime également des ateliers d’initiation pour des enfants français.",
+          "In my spare time, I regularly practice Chinese painting and also provide Chinese painting workshops for French children."
         ]
       },
       {
