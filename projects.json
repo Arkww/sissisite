@@ -35,17 +35,6 @@
     ],
     "blocks": [
       {
-        "k": "img",
-        "src": "hero.jpg",
-        "r": "21/9",
-        "fit": "cover",
-        "cap": [
-          "立体场景 — 山峦全景",
-          "Scène pop-up — paysage de montagnes",
-          "Pop-up scene — mountain panorama"
-        ]
-      },
-      {
         "k": "text",
         "t": [
           "构思与草图",
@@ -56,6 +45,17 @@
           "我研究了多种立体书结构，最终选定两种不同的立体方式，以中国名胜古迹为主题进行绘制，每个立体元素均纯手工制作。",
           "J'ai étudié diverses techniques, pour finalement opter pour deux mécanismes tridimensionnels distincts, autour de sites célèbres chinois — chaque élément en relief réalisé à la main.",
           "I studied various techniques, then chose two distinct 3D mechanisms around famous Chinese sites — each raised element made by hand."
+        ]
+      },
+      {
+        "k": "img",
+        "src": "hero.jpg",
+        "r": "21/9",
+        "fit": "cover",
+        "cap": [
+          "立体场景 — 山峦全景",
+          "Scène pop-up — paysage de montagnes",
+          "Pop-up scene — mountain panorama"
         ]
       },
       {
