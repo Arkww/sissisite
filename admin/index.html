@@ -159,6 +159,8 @@ async function loadAll(){
   projectsSha = f.sha;
   STATE = JSON.parse(b64ToUtf8(f.content));
   sortByN();
+  const ls = STATE.map(p => p.s), ld = [...new Set(ls.filter((s, i) => ls.indexOf(s) !== i))];
+  if(ld.length) setTimeout(() => alert("注意：线上数据里有重复的项目：" + ld.join("、") + "。\n请检查并删除多余的项，再发布。"), 400);
   const sf = await ghGet("site.json");
   if(sf.missing){ SITE = defaultSite(); siteSha = null; }
   else { SITE = JSON.parse(b64ToUtf8(sf.content)); siteSha = sf.sha; }
@@ -463,6 +465,16 @@ document.getElementById("saveBtn").onclick = async () => {
   try {
     setStatus("发布中…");
     sortByN();
+    const slugs = STATE.map(p => p.s);
+    const dupS = [...new Set(slugs.filter((s, i) => slugs.indexOf(s) !== i))];
+    if(dupS.length && !confirm("检测到重复的项目（slug 重复）：" + dupS.join("、") + "。\n这通常意味着数据出错，仍要发布吗？")){
+      setStatus("已取消发布"); btn.disabled = false; return;
+    }
+    const nums = STATE.map(p => p.n);
+    const dupN = [...new Set(nums.filter((x, i) => x && nums.indexOf(x) !== i))];
+    if(dupN.length && !confirm("检测到重复的编号：" + dupN.join("、") + "。\n两个项目用了同一个编号，显示顺序会不确定。请先改成唯一的编号。\n仍要发布吗？")){
+      setStatus("已取消发布"); btn.disabled = false; return;
+    }
     const res = await ghPut("projects.json", utf8ToB64(JSON.stringify(STATE, null, 2)), projectsSha, "admin: 更新项目");
     projectsSha = res.content.sha;
     const sres = await ghPut("site.json", utf8ToB64(JSON.stringify(SITE, null, 2)), siteSha, "admin: 更新首页");
