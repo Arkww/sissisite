@@ -604,6 +604,8 @@ navRoot.innerHTML = navHTML();
     // fallback for file:// or a failed fetch
     if (typeof window !== "undefined" && window.PF_DATA) DATA = window.PF_DATA;
   }
+  // display order = the "n" number (编号), ascending
+  DATA.sort((a, b) => (parseInt(a.n, 10) || 0) - (parseInt(b.n, 10) || 0));
   if (!DATA.length) {
     mainRoot.innerHTML = `<p style="padding:120px 24px;color:var(--ink-55)">Impossible de charger les projets. Ouvre le site via un petit serveur local (ou vérifie projects.json).</p>`;
     return;

@@ -82,6 +82,7 @@ function h(tag, attrs, kids){
   return e;
 }
 function setStatus(msg, err){ statusEl.textContent = msg || ""; statusEl.style.color = err ? "#c0392b" : "var(--soft)"; }
+function sortByN(){ STATE.sort((a,b) => (parseInt(a.n,10)||0) - (parseInt(b.n,10)||0)); }
 function encPath(p){ return p.split("/").map(encodeURIComponent).join("/"); }
 function hdr(){ return { Authorization: "Bearer " + TOKEN, Accept: "application/vnd.github+json", "Content-Type": "application/json" }; }
 function utf8ToB64(s){ return btoa(Array.from(new TextEncoder().encode(s)).map(b => String.fromCharCode(b)).join("")); }
@@ -95,9 +96,16 @@ async function ghGet(path){
   return r.json();
 }
 async function ghPut(path, contentB64, sha, message){
-  const body = { message: message || ("admin: update " + path), content: contentB64, branch: BRANCH };
-  if(sha) body.sha = sha;
-  const r = await fetch(API + encPath(path), { method: "PUT", headers: hdr(), body: JSON.stringify(body) });
+  const send = (useSha) => {
+    const body = { message: message || ("admin: update " + path), content: contentB64, branch: BRANCH };
+    if(useSha) body.sha = useSha;
+    return fetch(API + encPath(path), { method: "PUT", headers: hdr(), body: JSON.stringify(body) });
+  };
+  let r = await send(sha);
+  if(r.status === 409){                     // sha 过期：拉取最新版本再试一次
+    const ex = await ghGet(path);
+    r = await send(ex.missing ? null : ex.sha);
+  }
   if(r.status === 403 || r.status === 404)
     throw new Error("令牌没有写入权限。请在 GitHub 上编辑该令牌 → Repository permissions → 「Contents」→ Read and write，并确认已选择「sissisite」仓库。");
   if(!r.ok) throw new Error("PUT " + path + " → " + r.status + " " + (await r.text()));
@@ -146,6 +154,7 @@ async function loadAll(){
   if(f.missing) throw new Error("仓库中找不到 projects.json。");
   projectsSha = f.sha;
   STATE = JSON.parse(b64ToUtf8(f.content));
+  sortByN();
   renderApp();
 }
 
@@ -332,9 +341,8 @@ function projectEditor(p, index){
       (function(){ const s=h("select",{style:"width:auto"},BLOCK_TYPES.map(t=>h("option",{value:t},[t])));
         return h("div",{class:"row"},[s, h("button",{class:"small",onclick:()=>{p.blocks.push(newBlock(s.value));fillBlocks();}},["+ 添加区块"])]); })()
     ]),
-    h("div",{class:"row",style:"margin-top:14px;border-top:1px solid var(--b);padding-top:10px"},[
-      h("button",{class:"small ghost",onclick:()=>{ if(index>0){ const [x]=STATE.splice(index,1); STATE.splice(index-1,0,x); renderApp(); } }},["↑ 上移"]),
-      h("button",{class:"small ghost",onclick:()=>{ if(index<STATE.length-1){ const [x]=STATE.splice(index,1); STATE.splice(index+1,0,x); renderApp(); } }},["↓ 下移"]),
+    h("div",{class:"row",style:"margin-top:14px;border-top:1px solid var(--b);padding-top:10px;justify-content:space-between"},[
+      h("span",{class:"muted"},["排序由「编号」决定（改编号即可调整顺序）"]),
       h("button",{class:"small ghost",style:"color:#c0392b;border-color:#c0392b",onclick:()=>{ if(confirm("确定删除这个项目？")){ STATE.splice(index,1); renderApp(); } }},["删除项目"])
     ])
   ]);
@@ -366,7 +374,10 @@ function renderApp(){
   app.append(
     h("div",{class:"row",style:"justify-content:space-between"},[
       h("h1",{},["后台管理 — 杨晨曦"]),
-      h("button",{class:"small ghost",onclick:()=>{ localStorage.removeItem("gh-token"); TOKEN=""; renderGate(); }},["退出登录"])
+      h("div",{class:"row"},[
+        h("a",{href:"/",target:"_blank"},[h("button",{class:"small ghost"},["↗ 打开网站"])]),
+        h("button",{class:"small ghost",onclick:()=>{ localStorage.removeItem("gh-token"); TOKEN=""; renderGate(); }},["退出登录"])
+      ])
     ]),
     h("p",{class:"muted"},["编辑内容后点击「保存并发布」。每次保存都会在 GitHub 创建一次提交，并自动触发 Vercel 重新部署。"]),
     h("h2",{},["简历 CV（PDF）"]),
@@ -384,6 +395,7 @@ document.getElementById("saveBtn").onclick = async () => {
   const btn = document.getElementById("saveBtn"); btn.disabled = true;
   try {
     setStatus("发布中…");
+    sortByN();
     const json = JSON.stringify(STATE, null, 2);
     const res = await ghPut("projects.json", utf8ToB64(json), projectsSha, "admin: 更新项目");
     projectsSha = res.content.sha;

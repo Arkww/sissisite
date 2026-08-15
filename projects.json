@@ -875,7 +875,7 @@
   },
   {
     "s": "eclat-ete",
-    "n": "05",
+    "n": "04",
     "dir": "eclat-ete",
     "a": "orange",
     "cover": "cover.jpg",
@@ -1049,6 +1049,67 @@
               "Scarf pattern"
             ]
           }
+        ]
+      }
+    ]
+  },
+  {
+    "s": "cyberpunk",
+    "n": "05",
+    "dir": "cyberpunk",
+    "a": "pink",
+    "cover": "cover.png",
+    "featured": true,
+    "title": "Cyberpunk",
+    "cn": [
+      "赛博朋克 · 三维动画",
+      "Cyberpunk · Animation 3D",
+      "Cyberpunk · 3D animation"
+    ],
+    "cat": [
+      "三维 · 动态影像",
+      "3D · Motion design",
+      "3D · Motion design"
+    ],
+    "lead": [
+      [
+        "这个一直在我脑海里想象出来的赛博朋克的世界，视频颜色调整，建筑透视追踪，赛博灯光动画都是我亲自调整与制作的，只想将梦里的幻象展现出来。",
+        "Un exercice de motion design 3D d'inspiration cyberpunk, explorant néons, matières et mouvement.",
+        "A cyberpunk-inspired 3D motion piece exploring neon, materials and movement."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "video",
+        "src": "motion.mp4",
+        "r": "16/9",
+        "cap": [
+          "动态影像 — 赛博朋克",
+          "Animation — Cyberpunk",
+          "Motion — Cyberpunk"
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "制作过程",
+          "Processus de création",
+          "Making-of"
+        ],
+        "b": [
+          "从视频调色渲染到每个建筑物透视的捕捉都经过多次调试而成。",
+          "De l'étalonnage et du rendu de la vidéo à la capture de la perspective de chaque bâtiment, tout a été peaufiné au fil de nombreux réglages.",
+          "From the video's colour grading and rendering to capturing each building's perspective, everything was refined over many rounds of adjustment."
+        ]
+      },
+      {
+        "k": "img",
+        "src": "1.png",
+        "r": "16/9",
+        "cap": [
+          "场景渲染",
+          "Rendu de la scène",
+          "Scene render"
         ]
       }
     ]
@@ -1809,7 +1870,7 @@
   },
   {
     "s": "photographie",
-    "n": "11",
+    "n": "10",
     "dir": "photographie",
     "a": "blue",
     "cover": "cover.jpg",
@@ -2039,7 +2100,7 @@
   },
   {
     "s": "peinture",
-    "n": "12",
+    "n": "11",
     "dir": "peinture",
     "a": "red",
     "cover": "cover.jpg",
@@ -2163,6 +2224,106 @@
               "Œuvre",
               "Work"
             ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "s": "lush",
+    "n": "12",
+    "dir": "lush",
+    "a": "green",
+    "cover": "cover.jpg",
+    "title": "LUSH × Halloween",
+    "cn": [
+      "LUSH 万圣节",
+      "LUSH Halloween",
+      "LUSH Halloween"
+    ],
+    "cat": [
+      "活动传播 · 海报",
+      "Campagne · Affiches",
+      "Campaign · Posters"
+    ],
+    "lead": [
+      [
+        "LUSH 是英国手工洗护品牌，以手工香皂、浴球等产品而闻名，强调新鲜原料、创意设计与环保理念。我参与了万圣节限定浴球礼盒的广告拍摄，负责产品视觉呈现及摄影工作。",
+        "LUSH est une marque britannique de produits de soin artisanaux, connue notamment pour ses savons faits main et ses bombes de bain. La marque met l’accent sur l’utilisation d’ingrédients frais, le design créatif et une démarche respectueuse de l’environnement. J’ai participé à la réalisation de la campagne publicitaire pour une collection de coffrets de bombes de bain édition spéciale Halloween, en prenant en charge la mise en valeur visuelle des produits et la photographie.",
+        "LUSH is a British brand of handmade bath and body products, best known for its handmade soaps and bath bombs. The brand focuses on fresh ingredients, creative design, and environmental responsibility. I participated in the advertising campaign for a special Halloween collection of bath bomb gift sets, taking charge of the products’ visual presentation and photography."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "video",
+        "src": "LUSH_VIDEO.mp4",
+        "r": "1/2",
+        "cap": [
+          "动态影像 — LUSH 万圣节",
+          "Motion — LUSH Halloween",
+          "Motion — LUSH Halloween"
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "产品摄影&海报",
+          "Photographie de produit & Affiche",
+          "Product Photography & Poster"
+        ],
+        "b": [
+          "我首先针对主打产品进行摄影，通过构图与光线突出产品特点，再从中筛选合适的照片进行海报设计，用于品牌宣传。",
+          "Je réalise d’abord des photographies des produits phares, puis je sélectionne les images adaptées pour créer des affiches promotionnelles.",
+          "I first photograph the key products, then select the best images to create promotional posters."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "1.jpg",
+            "r": "3/4",
+            "cap": [
+              "A3 海报 — 1",
+              "Affiche A3 — 1",
+              "A3 poster — 1"
+            ]
+          },
+          {
+            "src": "2.jpg",
+            "r": "3/4",
+            "cap": [
+              "A3 海报 — 2",
+              "Affiche A3 — 2",
+              "A3 poster — 2"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "3.png",
+            "r": "1/1",
+            "cap": [
+              "视觉物料",
+              "Visuel",
+              "Visual"
+            ],
+            "fit": "contain"
+          },
+          {
+            "src": "4.png",
+            "r": "1/1",
+            "cap": [
+              "视觉物料",
+              "Visuel",
+              "Visual"
+            ],
+            "fit": "contain"
           }
         ]
       }
@@ -2433,9 +2594,9 @@
     ]
   },
   {
-    "s": "lush",
+    "s": "庄周梦蝶",
     "n": "14",
-    "dir": "lush",
+    "dir": "庄周梦蝶",
     "a": "green",
     "cover": "cover.jpg",
     "title": [
@@ -2537,9 +2698,9 @@
     ]
   },
   {
-    "s": "freedent",
+    "s": "bobochacha",
     "n": "15",
-    "dir": "freedent",
+    "dir": "bobochacha",
     "a": "teal",
     "cover": "cover.png",
     "title": [
@@ -2631,15 +2792,60 @@
             "src": "mint.png",
             "r": "5/8",
             "cap": [
-              "强劲薄荷",
-              "Menthe forte",
-              "Strong mint"
-            ],
-            "fit": "contain"
-          },
+              "促销 — Taï Taï 套餐",
+              "Flyer promo — Taï Taï Combo",
+              "Promo — Taï Taï Combo"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "s": "sonoa-nuxe",
+    "n": "16",
+    "dir": "sonoa-nuxe",
+    "a": "pink",
+    "cover": "cover.jpg",
+    "title": "SONOA × NUXE",
+    "cn": [
+      "娇韵诗 × 音乐",
+      "Marque beauté × musique",
+      "Beauty brand × music"
+    ],
+    "cat": [
+      "品牌策略 · 网页",
+      "Stratégie de marque · Web",
+      "Brand strategy · Web"
+    ],
+    "lead": [
+      [
+        "为 NUXE 构思的品牌与数字项目,结合音乐感官，制作出符合NUXE特质的产品，并为本产品设计出匹配风格的网页宣传与邮箱推广设计。",
+        "Un projet de marque et digital pour NUXE, mêlé à une expérience musicale : positionnement, moodboard, produit et web.",
+        "A brand and digital project for NUXE, tied to a music experience: positioning, moodboard, product and web."
+      ],
+      [
+        "访问我的设计：https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0，此链接包括所有设计构思，草图及成品。",
+        "Voir mes designs : https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — ce lien réunit toutes les intentions, croquis et réalisations.",
+        "View my designs: https://www.figma.com/design/BGRS03XkYOMIKcRFv6ighm/NUXE-MUSIC?node-id=1-2&p=f&t=IgQycsg7mmAepkvq-0 — it gathers all the concepts, sketches and final work."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "text",
+        "t": [
+          "网页",
+          "Site Web",
+          "Web Page"
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
           {
-            "src": "strawberry.png",
-            "r": "5/8",
+            "src": "1.jpg",
+            "r": "16/9",
             "cap": [
               "草莓味",
               "Fraise",
@@ -3004,10 +3210,10 @@
     ]
   },
   {
-    "s": "sonoa-nuxe",
+    "s": "pulpe",
     "n": "20",
-    "dir": "sonoa-nuxe",
-    "a": "pink",
+    "dir": "pulpe",
+    "a": "orange",
     "cover": "cover.jpg",
     "title": [
       "SONOA × NUXE",
@@ -3343,10 +3549,10 @@
     ]
   },
   {
-    "s": "comic-web",
+    "s": "freedent",
     "n": "23",
-    "dir": "comic-web",
-    "a": "pink",
+    "dir": "freedent",
+    "a": "teal",
     "cover": "cover.png",
     "title": [
       "漫画网页",
@@ -3628,166 +3834,52 @@
             "src": "5.jpg",
             "r": "4/3",
             "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "6.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "火",
-          "Feu",
-          "fire"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "7.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "8.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "土",
-          "Terre",
-          "Earth"
-        ],
-        "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "9.jpg",
-            "r": "4/3",
-            "cap": [
-              "草原",
-              "Steppe",
-              "Steppe"
-            ]
-          },
-          {
-            "src": "10.jpg",
-            "r": "4/3",
-            "cap": [
-              "旅途",
-              "Voyage",
-              "Journey"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "文创产品",
-          "Créations culturelles",
-          "Cultural Creations"
-        ],
-        "b": [
-          "我认为，创作不应该只停留在画作本身，也可以通过文创产品等形式进行延伸，让作品进入生活。这样不仅能丰富作品的表现形式，也能赋予它更多的价值和意义。",
-          "Je pense qu’une création ne devrait pas se limiter à une œuvre d’art. Elle peut également être prolongée à travers des produits dérivés ou des objets créatifs, afin de faire entrer l’œuvre dans la vie quotidienne. Cela permet non seulement d’enrichir ses formes d’expression, mais aussi de lui donner davantage de valeur et de sens.",
-          "I believe that a creation should not be limited to the artwork itself. It can also be extended through creative products and related merchandise, allowing the work to become part of everyday life. This not only enriches its forms of expression, but also gives it greater value and meaning."
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 3,
-        "items": [
-          {
-            "src": "11.jpg",
-            "r": "1/1",
-            "cap": [
-              "黑底",
-              "Fond noir",
-              "Black ground"
-            ]
-          },
-          {
-            "src": "12.jpg",
-            "r": "1/1",
-            "cap": [
-              "白底",
-              "Fond blanc",
-              "White ground"
-            ],
-            "fit": "contain"
-          },
-          {
-            "src": "13.jpg",
-            "r": "1/1",
-            "cap": [
-              "蓝绿底",
-              "Fond sarcelle",
-              "Teal ground"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "14.jpg",
-            "r": "5/3",
-            "cap": [
-              "黑底",
-              "Fond noir",
-              "Black ground"
-            ]
-          },
-          {
-            "src": "15.jpg",
-            "r": "5/3",
-            "cap": [
-              "白底",
-              "Fond blanc",
-              "White ground"
+              "蓝莓味",
+              "Myrtille",
+              "Blueberry"
             ],
             "fit": "contain"
           }
+        ]
+      }
+    ]
+  },
+  {
+    "s": "comic-web",
+    "n": "24",
+    "dir": "comic-web",
+    "a": "pink",
+    "cover": "cover.png",
+    "title": [
+      "漫画网页",
+      "Site BD",
+      "Comic Web"
+    ],
+    "cn": [
+      "漫画网页",
+      "Site bande dessinée",
+      "Comic website"
+    ],
+    "cat": [
+      "网页 · 叙事",
+      "Web · Narration",
+      "Web · Storytelling"
+    ],
+    "lead": [
+      [
+        "一个漫画风格的叙事网页项目,以分镜与滚动叙事讲述故事。完整方案见下方 PDF。",
+        "Un projet de site narratif en bande dessinée, story-telling au fil du défilement. Dossier complet en PDF ci-dessous.",
+        "A comic-style narrative website project, storytelling through scrolling. Full case as PDF below."
+      ]
+    ],
+    "blocks": [
+      {
+        "k": "pdf",
+        "src": "Sissi-presentation.pdf",
+        "cap": [
+          "完整方案 — PDF",
+          "Présentation complète — PDF",
+          "Full presentation — PDF"
         ]
       }
     ]
