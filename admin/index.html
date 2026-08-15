@@ -61,6 +61,9 @@ const API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/";
 let TOKEN = localStorage.getItem("gh-token") || "";
 let STATE = [];        // 项目数组
 let projectsSha = null;
+let SITE = {};         // 首页设置（site.json）
+let siteSha = null;
+function defaultSite(){ return { eyebrow:["","",""], role:["","",""], experience:["","",""], lead:["","",""], chips:[] }; }
 
 const app = document.getElementById("app");
 const bar = document.getElementById("bar");
@@ -156,6 +159,9 @@ async function loadAll(){
   projectsSha = f.sha;
   STATE = JSON.parse(b64ToUtf8(f.content));
   sortByN();
+  const sf = await ghGet("site.json");
+  if(sf.missing){ SITE = defaultSite(); siteSha = null; }
+  else { SITE = JSON.parse(b64ToUtf8(sf.content)); siteSha = sf.sha; }
   renderApp();
 }
 
@@ -390,6 +396,42 @@ function cvPanel(){
   return h("div",{class:"card"}, rows);
 }
 
+/* ---------- 首页设置（site.json） ---------- */
+function chipsEditor(){
+  const wrap = h("div", {});
+  function fill(){
+    wrap.innerHTML = "";
+    SITE.chips = SITE.chips || [];
+    SITE.chips.forEach((c, ix) => {
+      if(!Array.isArray(SITE.chips[ix])) SITE.chips[ix] = [c||"",c||"",c||""];
+      wrap.append(h("div", { class:"block" }, [
+        h("div", { class:"row", style:"justify-content:space-between" }, [
+          h("strong", {}, ["技能 " + (ix+1)]),
+          h("div", { class:"row" }, [
+            h("button",{class:"small ghost",title:"上移",onclick:()=>{ if(ix>0){ const [x]=SITE.chips.splice(ix,1); SITE.chips.splice(ix-1,0,x); fill(); } }},["↑"]),
+            h("button",{class:"small ghost",title:"下移",onclick:()=>{ if(ix<SITE.chips.length-1){ const [x]=SITE.chips.splice(ix,1); SITE.chips.splice(ix+1,0,x); fill(); } }},["↓"]),
+            h("button",{class:"small ghost",onclick:()=>{ SITE.chips.splice(ix,1); fill(); }},["删除"])
+          ])
+        ]),
+        triField(SITE.chips, ix, null)
+      ]));
+    });
+    wrap.append(h("button", { class:"small", style:"margin-top:8px", onclick:()=>{ SITE.chips.push(["","",""]); fill(); } }, ["+ 添加技能气泡"]));
+  }
+  fill();
+  return h("div", {}, [ h("label", {}, ["技能气泡（三语）"]), wrap ]);
+}
+function siteSettings(){
+  return h("div", { class:"card" }, [
+    triField(SITE, "eyebrow", "小标题（眉标）"),
+    triField(SITE, "role", "职位"),
+    triField(SITE, "experience", "经验副标题"),
+    triField(SITE, "lead", "个人简介", true),
+    h("hr", { style:"border:none;border-top:1px solid var(--b);margin:16px 0" }),
+    chipsEditor()
+  ]);
+}
+
 /* ---------- 主渲染 ---------- */
 function renderApp(){
   bar.classList.remove("hide");
@@ -403,6 +445,8 @@ function renderApp(){
       ])
     ]),
     h("p",{class:"muted"},["编辑内容后点击「保存并发布」。每次保存都会在 GitHub 创建一次提交，并自动触发 Vercel 重新部署。"]),
+    h("h2",{},["首页设置"]),
+    siteSettings(),
     h("h2",{},["简历 CV（PDF）"]),
     cvPanel(),
     h("h2",{},["项目（" + STATE.length + "）"]),
@@ -419,9 +463,10 @@ document.getElementById("saveBtn").onclick = async () => {
   try {
     setStatus("发布中…");
     sortByN();
-    const json = JSON.stringify(STATE, null, 2);
-    const res = await ghPut("projects.json", utf8ToB64(json), projectsSha, "admin: 更新项目");
+    const res = await ghPut("projects.json", utf8ToB64(JSON.stringify(STATE, null, 2)), projectsSha, "admin: 更新项目");
     projectsSha = res.content.sha;
+    const sres = await ghPut("site.json", utf8ToB64(JSON.stringify(SITE, null, 2)), siteSha, "admin: 更新首页");
+    siteSha = sres.content.sha;
     setStatus("已发布 ✓ — Vercel 正在重新部署（约 1 分钟）");
   } catch(e){ setStatus("失败：" + e.message, true); alert(e.message); }
   finally { btn.disabled = false; }

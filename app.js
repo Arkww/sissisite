@@ -604,6 +604,18 @@ navRoot.innerHTML = navHTML();
     // fallback for file:// or a failed fetch
     if (typeof window !== "undefined" && window.PF_DATA) DATA = window.PF_DATA;
   }
+  // editable homepage content (eyebrow, role, experience, bio, skill chips)
+  try {
+    const s = await fetch("site.json", { cache: "no-cache" });
+    if (s.ok) {
+      const site = await s.json();
+      if (site.eyebrow) UI.eyebrow = site.eyebrow;
+      if (site.role) UI.role = site.role;
+      if (site.experience) UI.cjk = site.experience;
+      if (site.lead) UI.lead = site.lead;
+      if (Array.isArray(site.chips)) UI.chips = site.chips;
+    }
+  } catch (e) { /* keep built-in defaults */ }
   // display order = the "n" number (编号), ascending
   DATA.sort((a, b) => (parseInt(a.n, 10) || 0) - (parseInt(b.n, 10) || 0));
   if (!DATA.length) {
