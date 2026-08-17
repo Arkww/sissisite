@@ -1,61 +1,47 @@
 [
   {
-    "s": "livre-popup",
+    "s": "moonzzz",
     "n": "01",
-    "dir": "livre-popup",
-    "a": "red",
+    "dir": "moonzzz",
+    "a": "blue",
     "cover": "cover.jpg",
     "featured": true,
     "title": [
-      "立体书",
-      "Livre pop-up",
-      "Pop-up book"
+      "MOONZZZ",
+      "MOONZZZ",
+      "MOONZZZ"
     ],
     "cn": [
-      "立体书",
-      "Livre pop-up",
-      "Pop-up book"
+      "AI 心理健康应用",
+      "Application de bien-être IA",
+      "AI wellness app"
     ],
     "cat": [
-      "立体书 / 纸艺 · 三维创作",
-      "Édition & papier · Création 3D",
-      "Paper craft · 3D creation"
+      "AI 应用 · 心理健康",
+      "Application IA · Bien-être mental",
+      "AI app · Mental wellness"
     ],
     "lead": [
       [
-        "我编辑并制作了一本关于立体书制作的教学书。并创作了两本以国画为灵感的3D立体书作品，里面的每一个景色主题都是我自己绘制的。",
-        "J'ai rédigé un manuel technique dédié à la conception de livres pop-up et créé deux ouvrages en trois dimensions inspirés de la peinture asiatique.",
-        "I wrote a technical manual on pop-up book design and created two three-dimensional books inspired by Asian painting."
+        "MOONZZZ 是一款面向 18–30 岁正在上学及刚步入社会，对生活和工作感到压力的心理健康应用。共情式 AI 识别情绪并提供个性化陪伴，会推荐各种活动帮助你减少压力。",
+        "MOONZZZ est une application de bien-être destinée aux 18–30 ans. Une IA empathique détecte les émotions et propose un accompagnement personnalisé.",
+        "MOONZZZ is a wellness app for ages 18–30. An empathetic AI reads emotions and offers personalised support."
       ],
       [
-        "除了绘制插图外，立体书的开本方式和每页内容的实现形式也都是我自己的灵感并亲手制作。",
-        "Cette discipline, qui allie artisanat et narration visuelle, est à la fois ma passion et mon domaine d'excellence.",
-        "This craft, blending handwork and visual storytelling, is both my passion and my strength."
+        "沉浸式内容帮助舒缓压力，带来慰藉与宁静。如佩戴手表还可以实时检测你的压力数据，为你的心理健康保驾护航。",
+        "Ses contenus immersifs apaisent le stress et apportent réconfort et sérénité.",
+        "Its immersive content eases stress and brings comfort and calm."
       ]
     ],
     "blocks": [
       {
-        "k": "img",
-        "src": "hero.jpg",
-        "r": "21/9",
-        "fit": "cover",
+        "k": "video",
+        "src": "moonzzz.mp4",
+        "r": "16/9",
         "cap": [
-          "立体场景 — 山峦全景",
-          "Scène pop-up — paysage de montagnes",
-          "Pop-up scene — mountain panorama"
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "构思与草图",
-          "Idée & ébauche",
-          "Idea & sketch"
-        ],
-        "b": [
-          "我研究了多种立体书结构，最终选定两种不同的立体方式，以中国名胜古迹为主题进行绘制，每个立体元素均纯手工制作。",
-          "J'ai étudié diverses techniques, pour finalement opter pour deux mécanismes tridimensionnels distincts, autour de sites célèbres chinois — chaque élément en relief réalisé à la main.",
-          "I studied various techniques, then chose two distinct 3D mechanisms around famous Chinese sites — each raised element made by hand."
+          "动态影像 — 赛博朋克",
+          "Animation — Cyberpunk",
+          "Motion — Cyberpunk"
         ]
       },
       {
@@ -63,21 +49,21 @@
         "cols": 2,
         "items": [
           {
-            "src": "sketch-1.jpg",
-            "r": "4/3",
+            "src": "device-1.jpg",
+            "r": "9/16",
             "cap": [
-              "草图 — 结构研究",
-              "Croquis — recherches de structures",
-              "Sketches — structure studies"
+              "首页 — 移动端",
+              "Écran d'accueil — mobile",
+              "Home — mobile"
             ]
           },
           {
-            "src": "sketch-2.jpg",
-            "r": "4/3",
+            "src": "device-2.jpg",
+            "r": "9/16",
             "cap": [
-              "立体草图 — 机关研究",
-              "Croquis 3D — étude des mécanismes",
-              "3D sketches — mechanism study"
+              "智能手表 — 即时压力",
+              "Montre connectée — stress",
+              "Smartwatch — instant stress"
             ]
           }
         ]
@@ -85,14 +71,37 @@
       {
         "k": "text",
         "t": [
-          "成品与装帧",
-          "Résultat & reliure",
-          "Result & binding"
+          "读取压力等级",
+          "Lire le niveau de pression",
+          "Reading the pressure level"
         ],
         "b": [
-          "立体书的系列名为《醉华韵》，两本立体结构各不相同，装订方式都采用相同蝴蝶装订，但根据立体结构不同，每页的装订内容有些许改变。",
-          "Deux livres aux constructions en volume différentes, reliés selon un système de reliure papillon.",
-          "Two books with different volumetric constructions, bound with a butterfly binding."
+          "两个圆环表达内在状态与外在状态。重叠代表平静，压力为零；越分离,压力越大。共分五级。",
+          "Deux cercles traduisent l'état intérieur et extérieur. Superposés = calme, pression nulle ; plus ils s'éloignent, plus le stress grandit — cinq paliers.",
+          "Two circles express inner and outer state. Overlapping = calm, zero pressure; the further apart, the more stress — five levels."
+        ]
+      },
+      {
+        "k": "img",
+        "src": "pressure.jpg",
+        "r": "6/1",
+        "cap": [
+          "图示 — 五级压力",
+          "Schéma — cinq niveaux",
+          "Diagram — five levels"
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "目标用户",
+          "Stratégie de ciblage",
+          "Target Audience"
+        ],
+        "b": [
+          "",
+          "",
+          ""
         ]
       },
       {
@@ -100,81 +109,154 @@
         "cols": 2,
         "items": [
           {
-            "src": "result-1.jpg",
-            "r": "4/3",
+            "src": "1.jpg",
+            "r": "16/9",
             "cap": [
-              "成品 — 《醉花云》",
-              "Les deux ouvrages — « Zui Hua Yun »",
-              "The two books — “Zui Hua Yun”"
+              "城市海报",
+              "Affiche urbaine",
+              "Urban poster"
             ]
           },
           {
-            "src": "result-2.jpg",
-            "r": "4/3",
+            "src": "2.jpg",
+            "r": "16/9",
             "cap": [
-              "蝴蝶装订细节",
-              "Détail de la reliure papillon",
-              "Butterfly binding detail"
+              "Instagram 帖子",
+              "Posts Instagram",
+              "Instagram posts"
             ]
           }
         ]
       },
       {
-        "k": "cards",
+        "k": "text",
+        "t": [
+          "MOODBOARD",
+          "MOODBOARD",
+          "MOODBOARD"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
+          {
+            "src": "3.jpg",
+            "r": "16/9",
+            "cap": [
+              "城市海报",
+              "Affiche urbaine",
+              "Urban poster"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "LOGO与标准色",
+          "Logo & Couleurs principales",
+          "Logo & Brand Colors"
+        ],
+        "b": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "k": "grid",
         "cols": 2,
         "items": [
           {
-            "src": "book-1.jpg",
-            "r": "4/3",
-            "t": [
-              "第一本 — 180°立体结构",
-              "Premier livre — structure 180°",
-              "First book — 180° structure"
-            ],
-            "b": [
-              "每个场景经反复试验绘制而成，每页都在光影中讲述一个故事。",
-              "Chaque scène, née de nombreux essais, raconte une histoire sublimée par la lumière et l'ombre.",
-              "Each scene, born of many trials, tells a story shaped by light and shadow."
+            "src": "4.jpg",
+            "r": "16/9",
+            "cap": [
+              "城市海报",
+              "Affiche urbaine",
+              "Urban poster"
             ]
           },
           {
-            "src": "book-2.jpg",
-            "r": "4/3",
-            "t": [
-              "第二本 — 分层立体结构",
-              "Second livre — structure en niveaux",
-              "Second book — layered structure"
-            ],
-            "b": [
-              "每页至少三个层次，表现由远及近的纵深，丰富视觉体验。",
-              "Au moins trois plans par page pour exprimer la profondeur, du lointain au premier plan.",
-              "At least three planes per page express depth, from far to foreground."
+            "src": "5.jpg",
+            "r": "16/9",
+            "cap": [
+              "Instagram 帖子",
+              "Posts Instagram",
+              "Instagram posts"
             ]
           }
         ]
       },
       {
-        "k": "duo",
-        "layout": "text-img",
+        "k": "text",
         "t": [
-          "立体书手册",
-          "Manuel du livre animé",
-          "The pop-up manual"
+          "多种颜色模式",
+          "Différentes palettes de couleurs",
+          "Color Variations"
         ],
         "b": [
-          "这本完全由我设计、编辑与装订的立体书制作指南分为七章，详解常见立体结构及其制作方法，每种结构附操作实例，可以根据我总结的制作方法一步一步去实现自己的立体书。",
-          "Ce guide, conçu, édité et relié par mes soins, s'organise en sept chapitres détaillant les structures pop-up et leurs méthodes, chacune suivie d'un exemple.",
-          "This guide — designed, edited and bound by me — has seven chapters detailing pop-up structures and methods, each followed by an example."
+          "一系列与应用风格一致的推广内容。",
+          "Une série de publications cohérentes avec le style de l'app.",
+          "A set of posts consistent with the app's style."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 1,
+        "items": [
+          {
+            "src": "6.jpg",
+            "r": "16/9",
+            "cap": [
+              "城市海报",
+              "Affiche urbaine",
+              "Urban poster"
+            ]
+          }
+        ]
+      },
+      {
+        "k": "text",
+        "t": [
+          "社媒推广",
+          "Promotion sociale",
+          "Social promotion"
         ],
-        "img": {
-          "src": "manual-cover.jpg",
-          "r": "3/4",
-          "cap": [
-            "手册封面",
-            "Couverture du manuel",
-            "Manual cover"
-          ]
-        }
+        "b": [
+          "一系列与应用风格一致的推广内容。",
+          "Une série de publications cohérentes avec le style de l'app.",
+          "A set of posts consistent with the app's style."
+        ]
+      },
+      {
+        "k": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "src": "poster.jpg",
+            "r": "3/2",
+            "cap": [
+              "城市海报",
+              "Affiche urbaine",
+              "Urban poster"
+            ]
+          },
+          {
+            "src": "posts.jpg",
+            "r": "3/2",
+            "cap": [
+              "Instagram 帖子",
+              "Posts Instagram",
+              "Instagram posts"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -548,108 +630,62 @@
     ]
   },
   {
-    "s": "moonzzz",
+    "s": "livre-popup",
     "n": "03",
-    "dir": "moonzzz",
-    "a": "blue",
+    "dir": "livre-popup",
+    "a": "red",
     "cover": "cover.jpg",
     "featured": true,
     "title": [
-      "MOONZZZ",
-      "MOONZZZ",
-      "MOONZZZ"
+      "立体书",
+      "Livre pop-up",
+      "Pop-up book"
     ],
     "cn": [
-      "AI 心理健康应用",
-      "Application de bien-être IA",
-      "AI wellness app"
+      "立体书",
+      "Livre pop-up",
+      "Pop-up book"
     ],
     "cat": [
-      "AI 应用 · 心理健康",
-      "Application IA · Bien-être mental",
-      "AI app · Mental wellness"
+      "立体书 / 纸艺 · 三维创作",
+      "Édition & papier · Création 3D",
+      "Paper craft · 3D creation"
     ],
     "lead": [
       [
-        "MOONZZZ 是一款面向 18–30 岁正在上学及刚步入社会，对生活和工作感到压力的心理健康应用。共情式 AI 识别情绪并提供个性化陪伴，会推荐各种活动帮助你减少压力。",
-        "MOONZZZ est une application de bien-être destinée aux 18–30 ans. Une IA empathique détecte les émotions et propose un accompagnement personnalisé.",
-        "MOONZZZ is a wellness app for ages 18–30. An empathetic AI reads emotions and offers personalised support."
+        "我编辑并制作了一本关于立体书制作的教学书。并创作了两本以国画为灵感的3D立体书作品，里面的每一个景色主题都是我自己绘制的。",
+        "J'ai rédigé un manuel technique dédié à la conception de livres pop-up et créé deux ouvrages en trois dimensions inspirés de la peinture asiatique.",
+        "I wrote a technical manual on pop-up book design and created two three-dimensional books inspired by Asian painting."
       ],
       [
-        "沉浸式内容帮助舒缓压力，带来慰藉与宁静。如佩戴手表还可以实时检测你的压力数据，为你的心理健康保驾护航。",
-        "Ses contenus immersifs apaisent le stress et apportent réconfort et sérénité.",
-        "Its immersive content eases stress and brings comfort and calm."
+        "除了绘制插图外，立体书的开本方式和每页内容的实现形式也都是我自己的灵感并亲手制作。",
+        "Cette discipline, qui allie artisanat et narration visuelle, est à la fois ma passion et mon domaine d'excellence.",
+        "This craft, blending handwork and visual storytelling, is both my passion and my strength."
       ]
     ],
     "blocks": [
       {
-        "k": "video",
-        "src": "moonzzz.mp4",
-        "r": "16/9",
-        "cap": [
-          "动态影像 — 赛博朋克",
-          "Animation — Cyberpunk",
-          "Motion — Cyberpunk"
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 2,
-        "items": [
-          {
-            "src": "device-1.jpg",
-            "r": "9/16",
-            "cap": [
-              "首页 — 移动端",
-              "Écran d'accueil — mobile",
-              "Home — mobile"
-            ]
-          },
-          {
-            "src": "device-2.jpg",
-            "r": "9/16",
-            "cap": [
-              "智能手表 — 即时压力",
-              "Montre connectée — stress",
-              "Smartwatch — instant stress"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "读取压力等级",
-          "Lire le niveau de pression",
-          "Reading the pressure level"
-        ],
-        "b": [
-          "两个圆环表达内在状态与外在状态。重叠代表平静，压力为零；越分离,压力越大。共分五级。",
-          "Deux cercles traduisent l'état intérieur et extérieur. Superposés = calme, pression nulle ; plus ils s'éloignent, plus le stress grandit — cinq paliers.",
-          "Two circles express inner and outer state. Overlapping = calm, zero pressure; the further apart, the more stress — five levels."
-        ]
-      },
-      {
         "k": "img",
-        "src": "pressure.jpg",
-        "r": "6/1",
+        "src": "hero.jpg",
+        "r": "21/9",
+        "fit": "cover",
         "cap": [
-          "图示 — 五级压力",
-          "Schéma — cinq niveaux",
-          "Diagram — five levels"
+          "立体场景 — 山峦全景",
+          "Scène pop-up — paysage de montagnes",
+          "Pop-up scene — mountain panorama"
         ]
       },
       {
         "k": "text",
         "t": [
-          "目标用户",
-          "Stratégie de ciblage",
-          "Target Audience"
+          "构思与草图",
+          "Idée & ébauche",
+          "Idea & sketch"
         ],
         "b": [
-          "",
-          "",
-          ""
+          "我研究了多种立体书结构，最终选定两种不同的立体方式，以中国名胜古迹为主题进行绘制，每个立体元素均纯手工制作。",
+          "J'ai étudié diverses techniques, pour finalement opter pour deux mécanismes tridimensionnels distincts, autour de sites célèbres chinois — chaque élément en relief réalisé à la main.",
+          "I studied various techniques, then chose two distinct 3D mechanisms around famous Chinese sites — each raised element made by hand."
         ]
       },
       {
@@ -657,21 +693,21 @@
         "cols": 2,
         "items": [
           {
-            "src": "1.jpg",
-            "r": "16/9",
+            "src": "sketch-1.jpg",
+            "r": "4/3",
             "cap": [
-              "城市海报",
-              "Affiche urbaine",
-              "Urban poster"
+              "草图 — 结构研究",
+              "Croquis — recherches de structures",
+              "Sketches — structure studies"
             ]
           },
           {
-            "src": "2.jpg",
-            "r": "16/9",
+            "src": "sketch-2.jpg",
+            "r": "4/3",
             "cap": [
-              "Instagram 帖子",
-              "Posts Instagram",
-              "Instagram posts"
+              "立体草图 — 机关研究",
+              "Croquis 3D — étude des mécanismes",
+              "3D sketches — mechanism study"
             ]
           }
         ]
@@ -679,42 +715,14 @@
       {
         "k": "text",
         "t": [
-          "MOODBOARD",
-          "MOODBOARD",
-          "MOODBOARD"
+          "成品与装帧",
+          "Résultat & reliure",
+          "Result & binding"
         ],
         "b": [
-          "",
-          "",
-          ""
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 1,
-        "items": [
-          {
-            "src": "3.jpg",
-            "r": "16/9",
-            "cap": [
-              "城市海报",
-              "Affiche urbaine",
-              "Urban poster"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "LOGO与标准色",
-          "Logo & Couleurs principales",
-          "Logo & Brand Colors"
-        ],
-        "b": [
-          "",
-          "",
-          ""
+          "立体书的系列名为《醉华韵》，两本立体结构各不相同，装订方式都采用相同蝴蝶装订，但根据立体结构不同，每页的装订内容有些许改变。",
+          "Deux livres aux constructions en volume différentes, reliés selon un système de reliure papillon.",
+          "Two books with different volumetric constructions, bound with a butterfly binding."
         ]
       },
       {
@@ -722,89 +730,81 @@
         "cols": 2,
         "items": [
           {
-            "src": "4.jpg",
-            "r": "16/9",
+            "src": "result-1.jpg",
+            "r": "4/3",
             "cap": [
-              "城市海报",
-              "Affiche urbaine",
-              "Urban poster"
+              "成品 — 《醉花云》",
+              "Les deux ouvrages — « Zui Hua Yun »",
+              "The two books — “Zui Hua Yun”"
             ]
           },
           {
-            "src": "5.jpg",
-            "r": "16/9",
+            "src": "result-2.jpg",
+            "r": "4/3",
             "cap": [
-              "Instagram 帖子",
-              "Posts Instagram",
-              "Instagram posts"
+              "蝴蝶装订细节",
+              "Détail de la reliure papillon",
+              "Butterfly binding detail"
             ]
           }
         ]
       },
       {
-        "k": "text",
-        "t": [
-          "多种颜色模式",
-          "Différentes palettes de couleurs",
-          "Color Variations"
-        ],
-        "b": [
-          "一系列与应用风格一致的推广内容。",
-          "Une série de publications cohérentes avec le style de l'app.",
-          "A set of posts consistent with the app's style."
-        ]
-      },
-      {
-        "k": "grid",
-        "cols": 1,
-        "items": [
-          {
-            "src": "6.jpg",
-            "r": "16/9",
-            "cap": [
-              "城市海报",
-              "Affiche urbaine",
-              "Urban poster"
-            ]
-          }
-        ]
-      },
-      {
-        "k": "text",
-        "t": [
-          "社媒推广",
-          "Promotion sociale",
-          "Social promotion"
-        ],
-        "b": [
-          "一系列与应用风格一致的推广内容。",
-          "Une série de publications cohérentes avec le style de l'app.",
-          "A set of posts consistent with the app's style."
-        ]
-      },
-      {
-        "k": "grid",
+        "k": "cards",
         "cols": 2,
         "items": [
           {
-            "src": "poster.jpg",
-            "r": "3/2",
-            "cap": [
-              "城市海报",
-              "Affiche urbaine",
-              "Urban poster"
+            "src": "book-1.jpg",
+            "r": "4/3",
+            "t": [
+              "第一本 — 180°立体结构",
+              "Premier livre — structure 180°",
+              "First book — 180° structure"
+            ],
+            "b": [
+              "每个场景经反复试验绘制而成，每页都在光影中讲述一个故事。",
+              "Chaque scène, née de nombreux essais, raconte une histoire sublimée par la lumière et l'ombre.",
+              "Each scene, born of many trials, tells a story shaped by light and shadow."
             ]
           },
           {
-            "src": "posts.jpg",
-            "r": "3/2",
-            "cap": [
-              "Instagram 帖子",
-              "Posts Instagram",
-              "Instagram posts"
+            "src": "book-2.jpg",
+            "r": "4/3",
+            "t": [
+              "第二本 — 分层立体结构",
+              "Second livre — structure en niveaux",
+              "Second book — layered structure"
+            ],
+            "b": [
+              "每页至少三个层次，表现由远及近的纵深，丰富视觉体验。",
+              "Au moins trois plans par page pour exprimer la profondeur, du lointain au premier plan.",
+              "At least three planes per page express depth, from far to foreground."
             ]
           }
         ]
+      },
+      {
+        "k": "duo",
+        "layout": "text-img",
+        "t": [
+          "立体书手册",
+          "Manuel du livre animé",
+          "The pop-up manual"
+        ],
+        "b": [
+          "这本完全由我设计、编辑与装订的立体书制作指南分为七章，详解常见立体结构及其制作方法，每种结构附操作实例，可以根据我总结的制作方法一步一步去实现自己的立体书。",
+          "Ce guide, conçu, édité et relié par mes soins, s'organise en sept chapitres détaillant les structures pop-up et leurs méthodes, chacune suivie d'un exemple.",
+          "This guide — designed, edited and bound by me — has seven chapters detailing pop-up structures and methods, each followed by an example."
+        ],
+        "img": {
+          "src": "manual-cover.jpg",
+          "r": "3/4",
+          "cap": [
+            "手册封面",
+            "Couverture du manuel",
+            "Manual cover"
+          ]
+        }
       }
     ]
   },
