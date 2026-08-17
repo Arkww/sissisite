@@ -25,6 +25,12 @@ function esc(s) {
     .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+/* cache-busting version for media: appended to image/video URLs so a replaced
+   file (same name) is refetched instead of served stale from cache. Set from
+   site.json "rev" at boot (bumped every time the admin publishes). */
+let IMG_REV = "";
+function bust(u) { return IMG_REV ? u + (u.indexOf("?") < 0 ? "?" : "&") + "v=" + IMG_REV : u; }
+
 /* Escape text, then turn any http(s) URL into a clickable link (opens in a new
    tab). Use this for free text (leads, block bodies) instead of esc(). */
 function linkify(s) {
@@ -50,7 +56,7 @@ var HEIC_EXTS = ["heic", "heif", "HEIC", "HEIF"];
 function imgCandidates(dir, name) {
   const base = name.replace(/\.[^.\/]+$/, "");            // strip extension
   const origExt = (name.slice(base.length + 1) || "").toLowerCase();
-  const url = f => "images/" + dir + "/" + f;
+  const url = f => bust("images/" + dir + "/" + f);
   const build = exts => {
     const seen = {}, out = [];
     // the exact name as written comes first when it belongs to this group
@@ -217,7 +223,7 @@ function videoCandidates(dir, name) {
                   .concat([name])
                   .concat(rest.map(e => base + "." + e));
   const seen = {}, out = [];
-  files.forEach(f => { if (!seen[f]) { seen[f] = 1; out.push("images/" + dir + "/" + f); } });
+  files.forEach(f => { if (!seen[f]) { seen[f] = 1; out.push(bust("images/" + dir + "/" + f)); } });
   return out;
 }
 function videoEl(dir, name) {
@@ -329,7 +335,7 @@ function homeHTML() {
         </div>
         <aside class="hero-aside">
           <div class="portrait">
-            <img src="images/about/portrait.jpg" alt="Sissi Yang" loading="lazy" onerror="this.style.display='none'">
+            <img src="${bust("images/about/portrait.jpg")}" alt="Sissi Yang" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div class="langbar">
             <div class="langbar-label">${esc(L(UI.langsLabel))}</div>
@@ -614,6 +620,7 @@ navRoot.innerHTML = navHTML();
       if (site.experience) UI.cjk = site.experience;
       if (site.lead) UI.lead = site.lead;
       if (Array.isArray(site.chips)) UI.chips = site.chips;
+      if (site.rev) IMG_REV = String(site.rev);
     }
   } catch (e) { /* keep built-in defaults */ }
   // display order = the "n" number (编号), ascending

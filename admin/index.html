@@ -217,7 +217,7 @@ function imageField(owner, key, dir, label){
       setStatus("上传 " + name + "…");
       await uploadBinary("images/" + dir + "/" + name, f, "admin: upload " + dir + "/" + name);
       owner[key] = name; nameI.value = name;
-      setStatus("已上传：" + name + " ✓");
+      setStatus("已上传：" + name + " ✓ — 记得点「保存并发布」让改动生效");
     } catch(e){ setStatus("上传出错：" + e.message, true); alert(e.message); }
   };
   return h("div", {}, [ label ? h("label", {}, [label]) : "",
@@ -477,6 +477,7 @@ document.getElementById("saveBtn").onclick = async () => {
     }
     const res = await ghPut("projects.json", utf8ToB64(JSON.stringify(STATE, null, 2)), projectsSha, "admin: 更新项目");
     projectsSha = res.content.sha;
+    SITE.rev = Date.now();   // cache-busting: force fresh images/videos after publish
     const sres = await ghPut("site.json", utf8ToB64(JSON.stringify(SITE, null, 2)), siteSha, "admin: 更新首页");
     siteSha = sres.content.sha;
     setStatus("已发布 ✓ — Vercel 正在重新部署（约 1 分钟）");
